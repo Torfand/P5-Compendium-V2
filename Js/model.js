@@ -3,6 +3,7 @@ var model = {
     personaInfo: {
         personaList: [
             {
+                internalID : 1,
                 Name: 'Arsene', Arcana: 'Fool',
                 attributes: { str: 2, mag: 2, end: 2, agi: 3, lck: 1}
             },
@@ -21,6 +22,10 @@ var model = {
             {
                 Name: 'Mandrake', Arcana: 'Death',
                 attributes: { str: 2, mag: 3, end: 3, agi: 4, lck: 4}
+            },
+            {
+                Name: 'Bicorn', Arcana: 'Hermit',
+                attributes: { str: 5, mag: 3, end: 3, agi: 5, lck: 3}
             },
 
         ]

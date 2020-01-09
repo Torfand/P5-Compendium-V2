@@ -1,7 +1,9 @@
 //view
 let html = '';
-function displayTable(){
-     html =  `<div class="table">
+let showhide = true;
+
+function displayTable() {
+  html = `<div class="table">
           
     <div class="row header">
       <div class="cell">
@@ -25,21 +27,24 @@ function displayTable(){
       <div class="cell">
         Luck
       </div>
+      <div class="cell">
+        <button onclick="collapse()">☰</button>
+      </div>
       
     </div>
     `
-    
-    document.getElementById('wrapper').innerHTML = html;
+
+  document.getElementById('wrapper').innerHTML = html;
 }
- function diplayPersonaContent(){
-   for (personas of model.personaInfo.personaList){
-      html += `
-    <div class="row">
-      <div class="cell" data-title="Name">${personas.Name} 
+function diplayPersonaContent() {
+  for (personas of model.personaInfo.personaList) {
+    html += `
+    <div class="${showhide == true ? 'row' : 'showHide'}">
+      <div class="cell" data-title="Name" onclick="profile()">${personas.Name}
       </div>
       <div class="cell" data-title="Arcana">${personas.Arcana}
       </div>
-      <div class="cell" data-title="Strenght">${personas.attributes.str}
+      <div class="cell sideBorderleft" data-title="Strenght">${personas.attributes.str}
       </div>
       <div class="cell" data-title="Magic">${personas.attributes.mag}
       </div>
@@ -48,12 +53,25 @@ function displayTable(){
       <div class="cell" data-title="Agility">${personas.attributes.agi}
       </div>
       <div class="cell" data-title="Luck">${personas.attributes.lck}
-        
-      </div>
-    </div>` ;}
-    console.log(html)
-    document.getElementById('wrapper').innerHTML = html;
+        </div>
+        <div class="cell" data-title="Luck">&nbsp
+        </div>
+    </div>` ;
+  }
 
- }
+  document.getElementById('wrapper').innerHTML = html;
+}
 
-  
+function collapse() {
+  if (showhide == false) {
+    showhide = true;
+  }
+  else {
+    showhide = false;
+  }
+  html = ' '
+  displayTable();
+  diplayPersonaContent();
+
+}
+
