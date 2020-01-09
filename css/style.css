@@ -34,6 +34,7 @@ body {
     width: 100%;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
     display: table;
+    
 }
 
 @media screen and (max-width: 580px) {
@@ -45,6 +46,7 @@ body {
 .row {
     display: table-row;
     background: #f6f6f6;
+    
 }
 
 .row:nth-of-type(odd) {
@@ -63,6 +65,7 @@ body {
     .row {
         padding: 14px 0 7px;
         display: block;
+       
     }
 
     .row.header {
@@ -76,6 +79,7 @@ body {
 
     .row .cell {
         margin-bottom: 10px;
+        
     }
 
     .row .cell:before {
@@ -94,7 +98,9 @@ body {
 .cell {
     padding: 6px 12px;
     display: table-cell;
+    
 }
+
 
 @media screen and (max-width: 580px) {
     .cell {
