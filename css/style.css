@@ -1,50 +1,51 @@
 body {
     font-family: Lucida;
     font-size: 14px;
-    
     line-height: 20px;
     font-weight: 400;
     color: #3b3b3b;
     -webkit-font-smoothing: antialiased;
-   
     background-image: url(p5-back.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    
-    
 }
 
 @media screen and (max-width: 580px) {
     body {
         font-size: 16px;
         line-height: 22px;
-        
     }
-
 }
 
 .wrapper {
     margin: 0 auto;
     padding: 40px;
     max-width: 800px;
-    
 }
+
+.personaProfiles {
+    display: grid;
+   background-color: white;
+   text-align: center;
+   color: black;
+   
+}
+
 button {
     display: block;
     background-color: crimson;
     border: none;
 }
-.showHide {
-display: none;
 
+.showHide {
+    display: none;
 }
 
 .table {
     margin: 0 0 40px 0;
     width: 100%;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
     display: table;
-    
 }
 
 @media screen and (max-width: 580px) {
@@ -56,7 +57,6 @@ display: none;
 .row {
     display: table-row;
     background: #f6f6f6;
-    
 }
 
 .row:nth-of-type(odd) {
@@ -66,32 +66,24 @@ display: none;
 .row.header {
     font-weight: 900;
     color: #ffffff;
-    background:crimson;
+    background: crimson;
 }
-
-
 
 @media screen and (max-width: 580px) {
     .row {
         padding: 14px 0 7px;
         display: block;
-       
     }
-
     .row.header {
         padding: 0;
         height: 6px;
     }
-
     .row.header .cell {
         display: none;
     }
-
     .row .cell {
         margin-bottom: 10px;
-        
     }
-
     .row .cell:before {
         margin-bottom: 3px;
         content: attr(data-title);
@@ -108,19 +100,15 @@ display: none;
 .cell {
     padding: 6px 12px;
     display: table-cell;
-  
-    
 }
-.sideBorderleft{
+
+.sideBorderleft {
     border-left: black solid 1px;
-
 }
-
 
 @media screen and (max-width: 580px) {
     .cell {
         padding: 2px 16px;
         display: block;
-        
     }
 }

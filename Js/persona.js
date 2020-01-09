@@ -40,13 +40,13 @@ function diplayPersonaContent() {
   for (personas of model.personaInfo.personaList) {
     html += `
     <div class="${showhide == true ? 'row' : 'showHide'}">
-      <div class="cell" data-title="Name" onclick="profile(${personas.internalID})">${personas.Name}
+      <div class="cell" data-title="Name" onclick="profile('${personas.Name}')">${personas.Name}
       </div>
       <div class="cell" data-title="Arcana">${personas.Arcana}
       </div>
       <div class="cell sideBorderleft" data-title="Strenght">${personas.attributes.str}
       </div>
-      <div class="cell" data-title="Magic">${personas.attributes.mag}
+      <div class="cell " data-title="Magic">${personas.attributes.mag}
       </div>
       <div class="cell" data-title="Endurance">${personas.attributes.end}
       </div>
@@ -54,7 +54,7 @@ function diplayPersonaContent() {
       </div>
       <div class="cell" data-title="Luck">${personas.attributes.lck}
         </div>
-        <div class="cell" data-title="Luck">&nbsp
+        <div class="cell sideBorderleft" data-title="Luck">&nbsp
         </div>
     </div>` ;
   }
