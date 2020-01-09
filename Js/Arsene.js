@@ -1,6 +1,8 @@
  html = '';
-function profile() {
+function profile(id) {
+    console.log(id)
+    if (id == 1){
 html = '<h1>dette funker</h1>'
-console.log(html)
+
 document.getElementById('wrapper').innerHTML = html
-}
+}}

@@ -40,7 +40,7 @@ function diplayPersonaContent() {
   for (personas of model.personaInfo.personaList) {
     html += `
     <div class="${showhide == true ? 'row' : 'showHide'}">
-      <div class="cell" data-title="Name" onclick="profile()">${personas.Name}
+      <div class="cell" data-title="Name" onclick="profile(${personas.internalID})">${personas.Name}
       </div>
       <div class="cell" data-title="Arcana">${personas.Arcana}
       </div>
