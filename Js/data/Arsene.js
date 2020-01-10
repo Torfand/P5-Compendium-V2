@@ -1,13 +1,13 @@
 //view
 html = '';
 
-function profile(id) {
+function profile() {
   
-    let { arcana, strenght, magic, endurance, agility, luck, physical, gun, fire, ice, electric, psychic, nuclear, bless, curse } = unpackedArsene();
+    let { arcana, strenght, magic, endurance, agility, luck, physical, gun, fire, ice, electric, wind,psychic, nuclear, bless, curse } = unpackedArsene();
     if (id == 'Arsene') {
         html = `
     <div class="personaProfiles">
-        <div class="profileBackground">Back</div>
+        <div class="profileBackground"></div>
         <div class="profileArcana">${arcana}</div>
         <table class="profileAttributesHeader">
                     <tr>
@@ -62,18 +62,18 @@ function profile(id) {
     }
 
     function testorino() {
-        html += `<div class="profileFuseFrom">FuseFrom</div>
+        html += `<div class="profileFuseFrom headerText">FuseFrom</div>
         <div class="profileFuseTo">FuseTo</div>
         <div class="ProfileImage">IMAGE</div>
         <div class="ProfileSkills">SKILLS</div>
-    <div>`;
+    </div>`;
     }
 }
 
 
    
 
-function unpackedArsene() {
+function unpackedArsene(id) {
     let Arsene = model.personaInfo.personaList[0];
     let arcana = Arsene.Arcana;
     let strenght = Arsene.attributes.str;
@@ -91,6 +91,6 @@ function unpackedArsene() {
     let nuclear = Arsene.elementalAttributes.nuclear;
     let bless = Arsene.elementalAttributes.bless;
     let curse = Arsene.elementalAttributes.curse;
-    return { arcana, strenght, magic, endurance, agility, luck, physical, gun, fire, ice, electric, psychic, nuclear, bless, curse };
+    return { arcana, strenght, magic, endurance, agility, luck, physical, gun, fire, ice, electric, psychic, nuclear, wind, bless, curse };
 }
 

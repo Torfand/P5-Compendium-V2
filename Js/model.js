@@ -3,7 +3,7 @@ var model
 
 model = {
     personaInfo: {
-        //Liste
+       
         personaList: [{
 
             Name: 'Arsene',

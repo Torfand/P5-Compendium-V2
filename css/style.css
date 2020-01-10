@@ -10,6 +10,7 @@ body {
     background-repeat: no-repeat;
 }
 
+
 @media screen and (max-width: 580px) {
     body {
         font-size: 16px;
@@ -35,6 +36,13 @@ body {
     grid-template-rows: repeat(10, 1fr);
     grid-column-gap: 1px;
     grid-row-gap: 1px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+.headerText{
+    
+    font-weight: bolder;
+    font-size: x-large;
+    
 }
 
 .profileBackground {
@@ -64,7 +72,7 @@ body {
 
 .profileElementsHeader {
     grid-area: 5 / 4 / 6 / 12;
-    background-color: grey;
+    background-color:black;
 }
 
 .profileElementsTable {
