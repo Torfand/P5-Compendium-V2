@@ -7,6 +7,7 @@ var model = {
             Arcana: 'Fool',
             attributes: { str: 2, mag: 2, end: 2, agi: 3, lck: 1 } ,
             img  : `<img src="img/Arsene.webp"/>`
+            
         },
         {
             Name: 'Jack-o-Lantern',

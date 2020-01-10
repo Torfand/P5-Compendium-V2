@@ -1,21 +1,33 @@
 html = '';
 
 function profile(id) {
-   Object
+    
 
     if (id == 'Arsene') {
         html = `<div class="personaProfiles">
-                        <div class="profileBackground">Background</div>
-                        <div class="ProfileHeader"><h1>'${model.personaInfo.personaList[0].Name}'</h1></div>
-                        <div class="ProfileInfoBackground">Infobackground</div>
-                        <div class="ProfilePictureFrame">${model.personaInfo.personaList[0].img}
-                                                          Arcana : Fool </div>
-                        <div class="cell ProfileAttributePane">Str :2 , Drot</div>
-                        <div class="ProfileElementalPane">Elementals</div>
-                        <div class="ProfileSkillPane">Skills</div>
-                        <div class="ProfileFuseFrom">Fuse From</div>
-                        <div class="ProfileFuseTo">Fuse to</div>
-                    </div> 
+        <div class="profileBackground">Background</div>
+        <div class="profileArcanaAndName">AND</div>
+        
+        <div class="profileAttributesHeader">AtributesHEADER
+        <table>
+        <th>
+        <td>Strength</td>
+        <td>Magic</td>
+        <td>Agility</td>
+        <td>Endurance</td>
+        <td>Luck</td>
+        </th>
+        </table>
+            </div>
+        <div class="profileImage">IMG</div>
+        <div class="profileAttrinbutesTable">ATTTABLE</div>
+        <div class="profileSpace"> </div>
+        <div class="profileElementalsHeader">ELEMENTHEADER</div>
+        <div class="profileElementalsTable">ELEMENTTABLE</div>
+        <div class="profileSkills">SKILLS</div>
+        <div class="profileFrom">From</div>
+        <div class="profileTo">To</div>
+                    
 
 
 
