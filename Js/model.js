@@ -1,5 +1,7 @@
 //model
-var model = {
+var model
+
+model = {
     personaInfo: {
         //Liste
         personaList: [{
@@ -7,6 +9,8 @@ var model = {
             Name: 'Arsene',
             Arcana: 'Fool',
             attributes: { str: 2, mag: 2, end: 2, agi: 3, lck: 1 },
+            elementalAttributes: { physical: '-', gun: '-', fire: '-', ice: 'Weak', electric: '-', 
+                                 wind: '-', psychic: '-', nuclear: '-', bless: 'Weak', curse: 'Resist'}
 
         },
         {
@@ -40,11 +44,5 @@ var model = {
 
 
     },
-    personaProfile: {
-        Arsene: { Arcana : 'Fool',
-            
 
-        }
-    }
-
-}
+};

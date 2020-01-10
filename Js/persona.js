@@ -1,41 +1,8 @@
 //view
-let html = '';
-let showhide = true;
-
-function displayTable() {
-  html = `<div class="table">
-          
-    <div class="row header">
-      <div class="cell">
-        Name
-      </div>
-      <div class="cell">
-        Arcana
-      </div>
-      <div class="cell">
-        Strenght
-      </div>
-      <div class="cell">
-        Magic
-      </div>
-      <div class="cell">
-        Endurance
-      </div>
-      <div class="cell">
-        Agility
-      </div>
-      <div class="cell">
-        Luck
-      </div>
-      <div class="cell">
-        <button onclick="collapse()">☰</button>
-      </div>
-      
-    </div>
-    `
-
-  document.getElementById('wrapper').innerHTML = html;
-}
+let html;
+html = '';
+let showhide;
+showhide = true;
 function diplayPersonaContent() {
   for (personas of model.personaInfo.personaList) {
     html += `
@@ -56,22 +23,33 @@ function diplayPersonaContent() {
         </div>
         <div class="cell sideBorderleft" data-title="Luck">&nbsp
         </div>
-    </div>` ;
+    </div>`;
   }
-
+  document.getElementById('wrapper').innerHTML = html;
+}
+function displayTable() {
+  html = `<div class="table">      
+    <div class="row header">
+      <div class="cell">Name</div>
+      <div class="cell">Arcana</div>
+      <div class="cell">Strenght</div>
+      <div class="cell">Magic</div>
+      <div class="cell">Endurance</div>
+      <div class="cell">Agility</div>
+      <div class="cell">Luck</div>
+      <div class="cell">
+        <button onclick="collapse()">☰</button>
+      </div>  
+    </div>
+    `;
   document.getElementById('wrapper').innerHTML = html;
 }
 
+
 function collapse() {
-  if (showhide == false) {
-    showhide = true;
-  }
-  else {
-    showhide = false;
-  }
+  showhide = showhide == false ? true : false;
   html = ' '
   displayTable();
   diplayPersonaContent();
-
 }
 

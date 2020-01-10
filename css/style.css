@@ -35,8 +35,6 @@ body {
     grid-template-rows: repeat(10, 1fr);
     grid-column-gap: 1px;
     grid-row-gap: 1px;
-    size: 300%;
-    box-shadow: black;
 }
 
 .profileBackground {
@@ -44,71 +42,64 @@ body {
     background-color: crimson;
 }
 
-.profileArcanaAndName {
+.profileArcana {
     grid-area: 2 / 2 / 10 / 12;
-    background-color:white;
-    
+    background-color: blue;
 }
 
 .profileAttributesHeader {
     grid-area: 2 / 4 / 3 / 12;
-    background-color: gold;
+    background-color: black;
 }
 
-.profileImage {
-    grid-area: 3 / 2 / 7 / 4;
-    background-color: green;
-}
-
-.profileAttrinbutesTable {
+.profileAttributesTable {
     grid-area: 3 / 4 / 4 / 12;
-    background-color: aqua;
+    background-color: yellowgreen;
 }
 
 .profileSpace {
     grid-area: 4 / 4 / 5 / 12;
-    background-color: rebeccapurple;
+    
 }
 
-.profileElementalsHeader{
+.profileElementsHeader {
     grid-area: 5 / 4 / 6 / 12;
-    background-color: gray;
+    background-color: grey;
 }
 
-.profileElementalsTable {
+.profileElementsTable {
     grid-area: 6 / 4 / 7 / 12;
-    background-color: khaki;
+    background-color: pink;
 }
 
-.profileSkills {
-    grid-area: 7 / 2 / 10 / 4;
-    background-color: yellowgreen;
-}
-
-.profileFrom {
+.profileFuseFrom {
     grid-area: 7 / 4 / 10 / 8;
-    background-color: orange;
+    background-color: tan;
 }
 
-.profileTo {
+.profileFuseTo {
     grid-area: 7 / 8 / 10 / 12;
-    background-color: black;
+    background-color: teal;
 }
-tr,
-td,
-th {
+
+.ProfileImage {
+    grid-area: 3 / 2 / 7 / 4;
+    background-color: tomato;
+}
+
+.ProfileSkills {
+    grid-area: 7 / 2 / 10 / 4;
+    background-color: thistle;
+}
+
+tr, td, th {
     border: 1px solid gray;
     border-collapse: collapse;
-
 }
 
-
-td,
-th {
+td, th {
     padding: 4px;
-
 }
-
 
 th {
     background-color: crimson;
@@ -119,9 +110,6 @@ th {
 tr:nth-child(even) {
     background-color: teal;
     color: white;
-
-
-
 }
 
 button {
