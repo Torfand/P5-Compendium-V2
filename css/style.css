@@ -36,6 +36,7 @@ body {
     grid-column-gap: 1px;
     grid-row-gap: 1px;
     size: 300%;
+    box-shadow: black;
 }
 
 .profileBackground {
@@ -45,11 +46,12 @@ body {
 
 .profileArcanaAndName {
     grid-area: 2 / 2 / 10 / 12;
-    background-color:blue;
+    background-color:white;
+    
 }
 
 .profileAttributesHeader {
-    grid-area: 2 / 4 / 3 / 10;
+    grid-area: 2 / 4 / 3 / 12;
     background-color: gold;
 }
 

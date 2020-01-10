@@ -1,13 +1,13 @@
 //model
 var model = {
     personaInfo: {
+        //Liste
         personaList: [{
 
             Name: 'Arsene',
             Arcana: 'Fool',
-            attributes: { str: 2, mag: 2, end: 2, agi: 3, lck: 1 } ,
-            img  : `<img src="img/Arsene.webp"/>`
-            
+            attributes: { str: 2, mag: 2, end: 2, agi: 3, lck: 1 },
+
         },
         {
             Name: 'Jack-o-Lantern',
@@ -39,6 +39,12 @@ var model = {
         // attributes: { str: 2, mag: 2, end: 3, lck: 1}, 
 
 
+    },
+    personaProfile: {
+        Arsene: { Arcana : 'Fool',
+            
+
+        }
     }
 
 }
