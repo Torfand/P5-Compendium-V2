@@ -38,6 +38,9 @@ model = {
             Arcana: 'Hermit',
             attributes: { str: 5, mag: 3, end: 3, agi: 5, lck: 3 }
         },
+        
+           
+        
 
         ]
         // attributes: { str: 2, mag: 2, end: 3, lck: 1}, 

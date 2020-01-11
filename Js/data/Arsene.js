@@ -9,7 +9,7 @@ function profile(id) {
     <div class="personaProfiles">
         <div class="profileBackground"></div>
         <div class="profileArcana">${arcana}</div>
-        <table class="profileAttributesHeader">
+            <table class="profileAttributesHeader">
                     <tr>
                         <th>Strength</th>
                         <th>Magic</th>
@@ -23,7 +23,8 @@ function profile(id) {
                             <td>${endurance}</td>
                             <td>${agility}</td>
                             <td>${luck}</td>
-                    </tr> </table>
+                    </tr> 
+                    </table>
                     <div class="profileSpace"> </div>`;
 
         elementsTable();

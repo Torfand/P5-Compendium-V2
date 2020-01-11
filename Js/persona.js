@@ -1,8 +1,7 @@
 //view
 let html;
-html = '';
-let showhide;
-showhide = true;
+html = ``;
+let showhide = true;
 function diplayPersonaContent() {
   for (personas of model.personaInfo.personaList) {
     html += `
