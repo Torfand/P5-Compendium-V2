@@ -10,7 +10,6 @@ body {
     background-repeat: no-repeat;
 }
 
-
 @media screen and (max-width: 580px) {
     body {
         font-size: 16px;
@@ -31,80 +30,50 @@ body {
 }
 
 .personaProfiles {
+    background-color: lightslategrey;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(10, 1fr);
     grid-column-gap: 1px;
     grid-row-gap: 1px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
-}
-.headerText{
-    
-    font-weight: bolder;
-    font-size: x-large;
-    
 }
 
-.profileBackground {
-    grid-area: 1 / 1 / 11 / 13;
-    background-color: crimson;
-}
-
-.profileArcana {
-    grid-area: 2 / 2 / 10 / 12;
+.profileImage {
+    grid-area: 1 / 1 / 6 / 4;
     background-color: blue;
 }
 
-.profileAttributesHeader {
-    grid-area: 2 / 4 / 3 / 12;
-    background-color: black;
+.profileAttributes{
+   background: black;
+    text-align: center;
+    grid-area: 1 / 4 / 3 / 13;
+   
 }
 
-.profileAttributesTable {
-    grid-area: 3 / 4 / 4 / 12;
-    background-color: yellowgreen;
-}
-
-.profileSpace {
-    grid-area: 4 / 4 / 5 / 12;
-    
-}
-
-.profileElementsHeader {
-    grid-area: 5 / 4 / 6 / 12;
-    background-color:black;
-}
-
-.profileElementsTable {
-    grid-area: 6 / 4 / 7 / 12;
-    background-color: pink;
+.profileElementals{
+    background: black;
+    ;
+    grid-area: 3 / 4 / 5 / 13;
 }
 
 .profileFuseFrom {
-    grid-area: 7 / 4 / 10 / 8;
-    background-color: tan;
+    background-color: coral;
+    grid-area: 5 / 4 / 7 / 13;
 }
 
 .profileFuseTo {
-    grid-area: 7 / 8 / 10 / 12;
-    background-color: teal;
+background-color: cyan;
+    grid-area: 7 / 4 / 9 / 13;
 }
 
-.ProfileImage {
-    grid-area: 3 / 2 / 7 / 4;
-    background-color: tomato;
-    
-}
-img{
-    width: 100%;
-    height: 100%;
-    display:    block;
-    object-fit: cover; 
+.profileSkills{
+    background-color: darkgoldenrod;
+    grid-area: 9 / 4 / 11 / 13;
 }
 
-.ProfileSkills {
-    grid-area: 7 / 2 / 10 / 4;
-    background-color: thistle;
+.profileAdditionalInfo{
+    background-color: darksalmon;
+    grid-area: 6 / 1 / 11 / 4;
 }
 
 tr, td, th {
@@ -118,7 +87,7 @@ td, th {
 
 th {
     background-color: crimson;
-    border: 1px solid gray;
+    padding: 8px;
     color: whitesmoke;
 }
 

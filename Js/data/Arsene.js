@@ -2,14 +2,14 @@
 html = '';
 
 function profile(id) {
-  
+
     let { arcana, strenght, magic, endurance, agility, luck, physical, gun, fire, ice, electric, wind, psychic, nuclear, bless, curse } = unpackedArsene();
     if (id == 'Arsene') {
         html = `
     <div class="personaProfiles">
         <div class="profileBackground"></div>
-        <div class="profileArcana">${arcana}</div>
-            <table class="profileAttributesHeader">
+        <div class="profileAdditionalInfo">${arcana}</div>
+            <table class="profileAttributes">
                     <tr>
                         <th>Strength</th>
                         <th>Magic</th>
@@ -17,7 +17,7 @@ function profile(id) {
                         <th>Endurance</th>
                         <th>Luck</td>
                     </tr>
-                        <tr class="profileAttributesTable">
+                        <tr>
                             <td>${strenght}</td>
                             <td>${magic}</td>
                             <td>${endurance}</td>
@@ -25,7 +25,8 @@ function profile(id) {
                             <td>${luck}</td>
                     </tr> 
                     </table>
-                    <div class="profileSpace"> </div>`;
+                    
+                    `;
 
         elementsTable();
         document.getElementById('wrapper').innerHTML = html;
@@ -33,7 +34,7 @@ function profile(id) {
 
     function elementsTable() {
         html += `
-        <table class="profileElementsHeader">
+        <table class="profileElementals">
         <tr>
             <th>Physical</th>
             <th>Gun</th>
@@ -46,7 +47,7 @@ function profile(id) {
             <th>Bless</th>
             <th>Curse</th>
         </tr>
-        <tr class="profileElementsTable">
+        <tr>
             <td>${physical}</td>
             <td>${gun}</td>
             <td>${fire}</td>
@@ -59,22 +60,37 @@ function profile(id) {
             <td>${curse}</td>
         </tr> 
         </table>`
-        restOfProfile();
+        skillTable();
     }
 
-    function restOfProfile() {
-        html += `<div class="profileFuseFrom headerText">FuseFrom</div>
+    function skillTable() {
+        fuse();
+     
+        
+            html +=
+                ` <table class="profileSkills">SKILL
+          <tr>
+          <th>Level</th>
+          <th>Type</th>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Cost</th>
+          </table>
+          </div>
+      </div>`
+                ;
+    }
+
+    function fuse() {
+        html += `<div class="profileFuseFrom">FuseFrom</div>
         <div class="profileFuseTo">FuseTo</div>
-        <div class="ProfileImage">
-            <img class="img" src="img/Arsene.webp"/>
-        </div>
-        <div class="ProfileSkills">SKILLS</div>
-    </div>`;
+        <div class="profileImage">            
+        </div>`;
     }
 }
 
 
-   
+
 
 function unpackedArsene() {
     let Arsene = model.personaInfo.personaList[0];

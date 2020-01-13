@@ -1,24 +1,25 @@
 //view
 let html;
 html = ``;
-let showhide = true;
+let showhide;
+showhide = true;
 function diplayPersonaContent() {
-  for (personas of model.personaInfo.personaList) {
+  for (persona of model.personaInfo.personaList) {
     html += `
     <div class="${showhide == true ? 'row' : 'showHide'}">
-      <div class="cell" data-title="Name" onclick="profile('${personas.Name}')">${personas.Name}
+      <div class="cell" data-title="Name" onclick="profile('${persona.Name}')">${persona.Name}
       </div>
-      <div class="cell" data-title="Arcana">${personas.Arcana}
+      <div class="cell" data-title="Arcana">${persona.Arcana}
       </div>
-      <div class="cell sideBorderleft" data-title="Strenght">${personas.attributes.str}
+      <div class="cell sideBorderleft" data-title="Strenght">${persona.attributes.str}
       </div>
-      <div class="cell " data-title="Magic">${personas.attributes.mag}
+      <div class="cell " data-title="Magic">${persona.attributes.mag}
       </div>
-      <div class="cell" data-title="Endurance">${personas.attributes.end}
+      <div class="cell" data-title="Endurance">${persona.attributes.end}
       </div>
-      <div class="cell" data-title="Agility">${personas.attributes.agi}
+      <div class="cell" data-title="Agility">${persona.attributes.agi}
       </div>
-      <div class="cell" data-title="Luck">${personas.attributes.lck}
+      <div class="cell" data-title="Luck">${persona.attributes.lck}
         </div>
         <div class="cell sideBorderleft" data-title="Luck">&nbsp
         </div>

@@ -10,7 +10,8 @@ model = {
             Arcana: 'Fool',
             attributes: { str: 2, mag: 2, end: 2, agi: 3, lck: 1 },
             elementalAttributes: { physical: '-', gun: '-', fire: '-', ice: 'Weak', electric: '-', 
-                                 wind: '-', psychic: '-', nuclear: '-', bless: 'Weak', curse: `Resist`}
+                                 wind: '-', psychic: '-', nuclear: '-', bless: 'Weak', curse: `Resist`},
+        
             
 
         },
@@ -44,7 +45,7 @@ model = {
        
 
         ]
-        // attributes: { str: 2, mag: 2, end: 3, lck: 1}, 
+       
 
 
     },
