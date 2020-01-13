@@ -14,29 +14,18 @@ body {
     body {
         font-size: 16px;
         line-height: 22px;
-      
-       
     }
 }
 
 .wrapper {
     margin: 0 auto;
     padding: 40px;
-    max-width: 1000px;
-    
+    max-width: 800px;
 }
 
 @media screen and (max-width: 580px) {
     .personaProfiles {
         line-height: 22px;
-
-    }
-    .wrapper {
-        margin: 0 auto;
-        padding: 40px;
-        max-width: 30%;
-       
-        
     }
 }
 
@@ -47,30 +36,24 @@ body {
     grid-template-rows: repeat(10, 1fr);
     grid-column-gap: 1px;
     grid-row-gap: 1px;
-    height: 500%;
-   
-    
 }
 
 .profileImage {
-    object-fit: cover;
-  width: 100%;
-  max-height: 100%;
     grid-area: 1 / 1 / 6 / 4;
+  
     background-color: blue;
 }
 
 .profileAttributes{
- 
+   background: black;
     text-align: center;
     grid-area: 1 / 4 / 3 / 13;
-   
    
 }
 
 .profileElementals{
-  
-    
+    background: black;
+    ;
     grid-area: 3 / 4 / 5 / 13;
 }
 
@@ -94,36 +77,24 @@ background-color: cyan;
     grid-area: 6 / 1 / 11 / 4;
 }
 
-table,
-tr,
-td,
-th {
+tr, td, th {
     border: 1px solid gray;
     border-collapse: collapse;
-    
-
 }
 
-
-td,
-th {
+td, th {
     padding: 4px;
-
 }
-
 
 th {
     background-color: crimson;
-    border: 1px solid gray;
+    padding: 8px;
     color: whitesmoke;
 }
 
 tr:nth-child(even) {
     background-color: teal;
     color: white;
-
-
-
 }
 
 button {
@@ -147,7 +118,6 @@ button {
     .table {
         display: block;
     }
-    
 }
 
 .row {

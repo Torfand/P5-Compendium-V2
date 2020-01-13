@@ -20,9 +20,9 @@ function diplayPersonaContent() {
       <div class="cell" data-title="Agility">${personas.attributes.agi}
       </div>
       <div class="cell" data-title="Luck">${personas.attributes.lck}
-        </div>
-        <div class="cell sideBorderleft" data-title="Luck">&nbsp
-        </div>
+      </div>
+      <div class="cell sideBorderleft" data-title="Luck">&nbsp
+      </div>
     </div>`;
   }
   document.getElementById('wrapper').innerHTML = html;
