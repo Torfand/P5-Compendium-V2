@@ -3,6 +3,7 @@ html = '';
 
 function profile(id) {
 
+
     let { arcana, strenght, magic, endurance, agility, luck, physical, gun, fire, ice, electric, wind, psychic, nuclear, bless, curse } = unpackedArsene();
     if (id == 'Arsene') {
         html = `
@@ -23,6 +24,7 @@ function profile(id) {
                             <td>${endurance}</td>
                             <td>${agility}</td>
                             <td>${luck}</td>
+                            
                     </tr> 
                     </table>
                     
@@ -36,7 +38,7 @@ function profile(id) {
         html += `
         <table class="profileElementals">
         <tr>
-            <th>Physical</th>
+            <th>Physical
             <th>Gun</th>
             <th>Fire</th>
             <th>Ice</th>
@@ -65,27 +67,32 @@ function profile(id) {
 
     function skillTable() {
         fuse();
-     
-        
-            html +=
-                ` <table class="profileSkills">SKILL
+          html +=
+     ` <table class="profileSkills">
           <tr>
-          <th>Level</th>
-          <th>Type</th>
-          <th>Name</th>
-          <th>Description</th>
-          <th>Cost</th>
-          </table>
-          </div>
-      </div>`
+            <th>Level</th>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Description</th>
+            <th>Cost</th> 
+          </tr>
+          <tr>
+            <td>${skillData.Eiha.persona.Arsene}</td>
+            <td>${skillData.Eiha.name}</td>
+            <td>${skillData.Eiha.type}</td>
+            <td>${skillData.Eiha.description}</td>
+            <td>${skillData.Eiha.cost}</td>
+        </tr>
+        </table>
+    `
                 ;
     }
 
     function fuse() {
         html += `<div class="profileFuseFrom">FuseFrom</div>
         <div class="profileFuseTo">FuseTo</div>
-        <div class="profileImage">            
-        </div>`;
+        <img class ="profileImage"src="Img/Arsene.png"></img>         
+        `;
     }
 }
 
