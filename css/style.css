@@ -8,6 +8,9 @@ body {
     background-image: url(p5-back.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    padding: 0;
+    margin: 0;
+    
 }
 
 @media screen and (max-width: 580px) {
@@ -21,6 +24,7 @@ body {
     margin: 0 auto;
     padding: 40px;
     max-width: 800px;
+    
 }
 
 @media screen and (max-width: 580px) {
@@ -30,12 +34,15 @@ body {
 }
 
 .personaProfiles {
-    background-color: lightsteelblue;
+    /* height: 100vh; */
+    background-color: beige;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(12, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+    
+    
 }
 
 .profileBackground {
@@ -44,6 +51,7 @@ body {
 
 .profileNameandArcana {
     grid-area: 1 / 2 / 2 / 12;
+    text-align: center;
 }
 
 .profileAttributeHeader {
@@ -86,7 +94,7 @@ body {
     grid-area: 11 / 1 / 12 / 13;
 }
 
-tr, td, th {
+table, tr, td, th {
     border: 1px solid gray;
     border-collapse: collapse;
 }

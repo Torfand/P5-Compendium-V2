@@ -25,10 +25,8 @@ function profile(id) {
                 <td>${endurance}</td>
                 <td>${agility}</td>
                 <td>${luck}</td>
-            </tr> 
-        </table>
-                    
-                    `;
+                        </tr> 
+                    </table>`;
         elementsTable();
         document.getElementById('wrapper').innerHTML = html;
     }
@@ -104,6 +102,7 @@ function profile(id) {
         <div class="profileFuseTo">FuseTo</div>
         </div>`;
     }
+    console.log(html)
 }
 
 
