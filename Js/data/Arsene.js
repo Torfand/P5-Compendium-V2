@@ -11,22 +11,22 @@ function profile(id) {
         <div class="profileBackground"></div>
         <h1 class="profileNameandArcana">Arsene --- ${arcana}</h1>
         <h1 class="profileAttributeHeader">Attributes:</h1>
-            <table class="profileAttributes">
-                    <tr>
-                        <th>Strength</th>
-                        <th>Magic</th>
-                        <th>Agility</th>
-                        <th>Endurance</th>
-                        <th>Luck</td>
-                    </tr>
-                        <tr>
-                            <td>${strenght}</td>
-                            <td>${magic}</td>
-                            <td>${endurance}</td>
-                            <td>${agility}</td>
-                            <td>${luck}</td>
-                        </tr> 
-                    </table>
+        <table class="profileAttributes">
+            <tr>
+                <th>Strength</th>
+                <th>Magic</th>
+                <th>Agility</th>
+                <th>Endurance</th>
+                <th>Luck</td>
+            </tr>
+            <tr>
+                <td>${strenght}</td>
+                <td>${magic}</td>
+                <td>${endurance}</td>
+                <td>${agility}</td>
+                <td>${luck}</td>
+            </tr> 
+        </table>
                     
                     `;
         elementsTable();
