@@ -47,7 +47,8 @@ body {
 }
 
 .personaProfiles {
-    height: 100vh; 
+    text-align: center;
+    height: 125vh; 
     border: 3px black ;
    border-style: groove;
    border-radius: 5px;
