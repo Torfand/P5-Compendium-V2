@@ -13,12 +13,12 @@ body {
     
 }
 
-@media screen and (max-width: 580px) {
+/* @media screen and (max-width: 580px) {
     body {
         font-size: 16px;
         line-height: 22px;
     }
-}
+} */
 
 .wrapper {
     margin: 0 auto;
@@ -27,14 +27,30 @@ body {
     
 }
 
-@media screen and (max-width: 580px) {
+@media only screen and (max-width: 500px) {
     .personaProfiles {
-        line-height: 22px;
+        height: 100vh; 
+        border: 3px black ;
+       border-style: groove;
+       border-radius: 5px;
+        background-color: beige;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        
+        
     }
+    
+
 }
 
 .personaProfiles {
-    /* height: 100vh; */
+    height: 100vh; 
+    border: 3px black ;
+   border-style: groove;
+   border-radius: 5px;
     background-color: beige;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -97,6 +113,7 @@ body {
 table, tr, td, th {
     border: 1px solid gray;
     border-collapse: collapse;
+    text-align: center;
 }
 
 td, th {
@@ -108,7 +125,9 @@ th {
     padding: 8px;
     color: whitesmoke;
 }
-
+tr{
+    background-color: turquoise;
+}
 tr:nth-child(even) {
     background-color: teal;
     color: white;

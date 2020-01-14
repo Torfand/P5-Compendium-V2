@@ -90,17 +90,45 @@ function profile(id) {
 
     
         }
-        // html+= `</table>`       
+        html+= `</table>`       
         fuse();
     }
 
     function fuse() {
         html += `
-        <h1 class="profileFuseFromHeader">Fuse From This :</h1>
-        <div class="profileFuseFrom">FuseFrom</div>
+        <h1 class="profileFuseFromHeader">Fuse From This:</h1>
+        <table class="profileFuseFrom">
+        <tr>
+            <th>Cost</th>
+            <th>Ingredients</th>
+        </tr>` 
+        for(fusecombos of fuseData.fuseTo.Arsene) {
+      html +=  
+      `<tr>
+            <td>${fusecombos.fuseCost}</td>
+            <td>${fusecombos.combo}</td>
+        </tr>
+        `;};
+        html+= 
+        `</table>
         <h1 class="profileFuseToHeader">Fuse To This :</h1>
-        <div class="profileFuseTo">FuseTo</div>
-        </div>`;
+        <table class="profileFuseTo">
+        <tr>
+            <th>Cost</th>
+            <th>Ingredients</th>
+        </tr>
+        `
+        for(fusecombos of fuseData.fuseFrom.Arsene){
+            html+= `
+        <tr>
+            <td>${fusecombos.fuseCost}</td>
+            <td>${fusecombos.combo}</td>
+        </tr>`;};
+        
+        
+      html +=  `
+      </table>
+        </div>`
     }
     console.log(html)
 }

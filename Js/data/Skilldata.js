@@ -62,7 +62,9 @@ var skillData = {
             Yamata_no_Orochi : 67
         }
         
-    }
+    },
+   
+    
 
 
 }
