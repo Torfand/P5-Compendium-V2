@@ -30,51 +30,60 @@ body {
 }
 
 .personaProfiles {
-    background-color: lightslategrey;
+    background-color: lightsteelblue;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(10, 1fr);
-    grid-column-gap: 1px;
-    grid-row-gap: 1px;
+    grid-template-rows: repeat(12, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
 }
 
-.profileImage {
-    grid-area: 1 / 1 / 6 / 4;
-  
-    background-color: blue;
+.profileBackground {
+    grid-area: 1 / 1 / 13 / 13;
 }
 
-.profileAttributes{
-   background: black;
-    text-align: center;
-    grid-area: 1 / 4 / 3 / 13;
-   
+.profileNameandArcana {
+    grid-area: 1 / 2 / 2 / 12;
 }
 
-.profileElementals{
-    background: black;
-    ;
-    grid-area: 3 / 4 / 5 / 13;
+.profileAttributeHeader {
+    grid-area: 2 / 1 / 3 / 13;
+}
+
+.profileAttributes {
+    grid-area: 3 / 1 / 4 / 13;
+}
+
+.profileElementsHeader {
+    grid-area: 4 / 1 / 5 / 13;
+}
+
+.profileElements {
+    grid-area: 5 / 1 / 6 / 13;
+}
+
+.profileSkillHeader {
+    grid-area: 6 / 1 / 7 / 13;
+}
+
+.profileSkills {
+    grid-area: 7 / 1 / 8 / 13;
+}
+
+.profileFuseFromHeader {
+    grid-area: 8 / 1 / 9 / 13;
 }
 
 .profileFuseFrom {
-    background-color: coral;
-    grid-area: 5 / 4 / 7 / 13;
+    grid-area: 9 / 1 / 10 / 13;
+}
+
+.profileFuseToHeader {
+    grid-area: 10 / 1 / 11 / 13;
 }
 
 .profileFuseTo {
-background-color: cyan;
-    grid-area: 7 / 4 / 9 / 13;
-}
-
-.profileSkills{
-    background-color: darkgoldenrod;
-    grid-area: 9 / 4 / 11 / 13;
-}
-
-.profileAdditionalInfo{
-    background-color: darksalmon;
-    grid-area: 6 / 1 / 11 / 4;
+    grid-area: 11 / 1 / 12 / 13;
 }
 
 tr, td, th {

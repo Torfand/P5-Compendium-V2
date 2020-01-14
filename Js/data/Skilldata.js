@@ -1,4 +1,4 @@
-let skillData = {
+var skillData = {
 
     Eiha: {
         name: 'Eiha',

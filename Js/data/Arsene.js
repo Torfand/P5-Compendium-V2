@@ -9,7 +9,8 @@ function profile(id) {
         html = `
     <div class="personaProfiles">
         <div class="profileBackground"></div>
-        <div class="profileAdditionalInfo">${arcana}</div>
+        <h1 class="profileNameandArcana">Arsene --- ${arcana}</h1>
+        <h1 class="profileAttributeHeader">Attributes:</h1>
             <table class="profileAttributes">
                     <tr>
                         <th>Strength</th>
@@ -24,19 +25,18 @@ function profile(id) {
                             <td>${endurance}</td>
                             <td>${agility}</td>
                             <td>${luck}</td>
-                            
-                    </tr> 
+                        </tr> 
                     </table>
                     
                     `;
-
         elementsTable();
         document.getElementById('wrapper').innerHTML = html;
     }
 
     function elementsTable() {
         html += `
-        <table class="profileElementals">
+        <h1 class="profileElementsHeader">Elements :</h1>
+        <table class="profileElements">
         <tr>
             <th>Physical
             <th>Gun</th>
@@ -66,33 +66,43 @@ function profile(id) {
     }
 
     function skillTable() {
+        html +=
+            ` <h1 class="profileSkillHeader">Skills :</h1>
+        <table class="profileSkills">
+        <tr>
+        <th>Level</th>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Cost</th>  
+        </tr> `;
+        for (var skill in skillData) {
+            for (var thing in skillData[skill].persona) {
+                if (skillData[skill].persona.hasOwnProperty('Arsene') && thing == 'Arsene') {
+                    html +=  `
+        <tr>
+            <td>${skillData[skill].persona.Arsene}</td>
+            <td>${skillData[skill].name}</td>
+            <td>${skillData[skill].type}</td>
+            <td>${skillData[skill].description}</td>
+            <td>${skillData[skill].cost}</td>
+        </tr>`;
+                }
+            }
+
+    
+        }
+        // html+= `</table>`       
         fuse();
-          html +=
-     ` <table class="profileSkills">
-          <tr>
-            <th>Level</th>
-            <th>Name</th>
-            <th>Type</th>
-            <th>Description</th>
-            <th>Cost</th> 
-          </tr>
-          <tr>
-            <td>${skillData.Eiha.persona.Arsene}</td>
-            <td>${skillData.Eiha.name}</td>
-            <td>${skillData.Eiha.type}</td>
-            <td>${skillData.Eiha.description}</td>
-            <td>${skillData.Eiha.cost}</td>
-        </tr>
-        </table>
-    `
-                ;
     }
 
     function fuse() {
-        html += `<div class="profileFuseFrom">FuseFrom</div>
+        html += `
+        <h1 class="profileFuseFromHeader">Fuse From This :</h1>
+        <div class="profileFuseFrom">FuseFrom</div>
+        <h1 class="profileFuseToHeader">Fuse To This :</h1>
         <div class="profileFuseTo">FuseTo</div>
-        <img class ="profileImage"src="Img/Arsene.png"></img>         
-        `;
+        </div>`;
     }
 }
 
