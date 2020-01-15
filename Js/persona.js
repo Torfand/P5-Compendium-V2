@@ -24,7 +24,7 @@ function diplayPersonaContent() {
       <div class="cell sideBorderleft" data-title="Luck">&nbsp
       </div>
     </div>`;
-    
+    console.log(html)
   }
   document.getElementById('wrapper').innerHTML = html;
 }
