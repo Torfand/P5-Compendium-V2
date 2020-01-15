@@ -1,16 +1,30 @@
 var skillData = {
-
-    Eiha: {
-        name: 'Eiha',
-        type: 'Curse',
-        description: 'Deals Weak damage to 1 foe.',
-        cost: '4 SP',
-        persona: {
-            Arsene: 1,
-            Incubus: 7,
-            Slime: 11
-
+    Agi : {
+        name:'Agi',
+        type:'Fire',
+        description: 'Deals weak Fire damage to 1 foe',
+        cost : '4 SP',
+        persona : {
+            Hua_Po : 0,
+            Jack_O_Lantern : 0,
+            Onmoraki : 13,
+            Succubus : 8,
         }
+    },
+    Adverse_resolve: {
+        name: 'Adverse Resolve',
+        type: 'Passive',
+        description: 'Increases critical rate when being Ambused.',
+        cost: '-',
+        persona: {
+            Arsene: 7,
+            Jikokuten: 31,
+            Rakasha: 30,
+            Raphael: 82,
+            Thanatos_Picaro: 73,
+            Yamata_no_Orochi: 67
+        }
+
     },
     Cleave: {
         name: 'Cleave',
@@ -20,6 +34,30 @@ var skillData = {
         persona: {
             Arsene: 2,
             Berith: 0,
+
+        }
+    },
+    Dream_Needle: {
+        name: 'Dream Needle',
+        type: 'Physical',
+        description: `Deals medium Physical damage and inflicts sleep to 1 foe`,
+        cost: '8% HP',
+        persona: {
+            Arsene: 5,
+            Pheonix: 0,
+            Inugami: 15,
+            Pisaca: 0
+        }
+    },
+    Eiha: {
+        name: 'Eiha',
+        type: 'Curse',
+        description: 'Deals Weak damage to 1 foe.',
+        cost: '4 SP',
+        persona: {
+            Arsene: 1,
+            Incubus: 7,
+            Slime: 11
 
         }
     },
@@ -36,35 +74,8 @@ var skillData = {
 
         }
     },
-    Dream_Needle: {
-        name: 'Dream Needle',
-        type: 'Physical',
-        description: `Deals medium Physical damage and inflicts sleep to 1 foe`,
-        cost: '8% HP',
-        persona: {
-            Arsene: 5,
-            Pheonix: 0,
-            Inugami: 15,
-            Pisaca: 0
-        }
-    },
-    Adverse_resolve: {
-        name: 'Adverse Resolve',
-        type: 'Passive',
-        description: 'Increases critical rate when being Ambused.',
-        cost : '-',
-        persona : {
-            Arsene: 7,
-            Jikokuten: 31,
-            Rakasha : 30,
-            Raphael : 82,
-            Thanatos_Picaro : 73,
-            Yamata_no_Orochi : 67
-        }
-        
-    },
-   
-    
+
+
 
 
 }
