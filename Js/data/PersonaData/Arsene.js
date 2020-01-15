@@ -130,30 +130,10 @@ function Arsene() {
       </table>
         </div>`
     }
-    console.log(html)
+   
 }
 
 
 
 
-function unpackedArsene() {
-    let Arsene = model.personaInfo.personaList[0];
-    let arcana = Arsene.Arcana;
-    let strenght = Arsene.attributes.str;
-    let magic = Arsene.attributes.mag;
-    let endurance = Arsene.attributes.end;
-    let agility = Arsene.attributes.agi;
-    let luck = Arsene.attributes.lck;
-    let physical = Arsene.elementalAttributes.physical;
-    let gun = Arsene.elementalAttributes.gun;
-    let fire = Arsene.elementalAttributes.fire;
-    let ice = Arsene.elementalAttributes.ice;
-    let electric = Arsene.elementalAttributes.electric;
-    let wind = Arsene.elementalAttributes.wind
-    let psychic = Arsene.elementalAttributes.psychic;
-    let nuclear = Arsene.elementalAttributes.nuclear;
-    let bless = Arsene.elementalAttributes.bless;
-    let curse = Arsene.elementalAttributes.curse;
-    return { arcana, strenght, magic, endurance, agility, luck, physical, gun, fire, ice, electric, psychic, nuclear, wind, bless, curse };
-}
 

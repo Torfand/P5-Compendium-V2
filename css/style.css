@@ -5,13 +5,11 @@ body {
     font-weight: 400;
     color: #3b3b3b;
     -webkit-font-smoothing: antialiased;
-   
-    background-size: cover;
+    background-image: url(p5-back.jpg);
+    background-size: 100vw 100vh;
     background-repeat: no-repeat;
     padding: 0;
     margin: 0;
-    background-image: url(p5-back.jpg);
-    
 }
 
 /* @media screen and (max-width: 580px) {
@@ -25,16 +23,15 @@ body {
     margin: 0 auto;
     padding: 40px;
     max-width: 800px;
-    
-    
+    height: 100vh;
 }
 
 @media only screen and (max-width: 500px) {
     .personaProfiles {
-        height: 125vh; 
-        border: 3px black ;
-       border-style: groove;
-       border-radius: 5px;
+        height: 100vh;
+        border: 3px black;
+        border-style: groove;
+        border-radius: 5px;
         background-color: beige;
         display: grid;
         grid-template-columns: repeat(12, 1fr);
@@ -42,28 +39,22 @@ body {
         grid-column-gap: 0px;
         grid-row-gap: 0px;
 
-        
-        
     }
-    
-
 }
 
 .personaProfiles {
     text-align: center;
-    height: 125vh; 
-    border: 3px black ;
-   border-style: groove;
-   border-radius: 5px;
+    height: 100vh;
+    border: 3px black;
+    border-style: groove;
+    border-radius: 5px;
     background-color: beige;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(12, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    
-    
-    
+    background-size: 100vw 100vh;
 }
 
 .profileBackground {
@@ -130,9 +121,11 @@ th {
     padding: 8px;
     color: whitesmoke;
 }
-tr{
+
+tr {
     background-color: turquoise;
 }
+
 tr:nth-child(even) {
     background-color: teal;
     color: white;

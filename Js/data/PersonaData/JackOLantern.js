@@ -3,25 +3,9 @@
 html = '';
 function JackOLantern() {
 
-    let Jack = model.personaInfo.personaList[1];
-    let arcana = Jack.Arcana;
-    let strenght = Jack.attributes.str;
-    let magic = Jack.attributes.mag;
-    let endurance = Jack.attributes.end;
-    let agility = Jack.attributes.agi;
-    let luck = Jack.attributes.lck;
-    let physical = Jack.elementalAttributes.physical;
-    let gun = Jack.elementalAttributes.gun;
-    let fire = Jack.elementalAttributes.fire;
-    let ice = Jack.elementalAttributes.ice;
-    let electric = Jack.elementalAttributes.electric;
-    let wind = Jack.elementalAttributes.wind
-    let psychic = Jack.elementalAttributes.psychic;
-    let nuclear = Jack.elementalAttributes.nuclear;
-    let bless = Jack.elementalAttributes.bless;
-    let curse = Jack.elementalAttributes.curse;
-  
-        html = `
+    let { arcana, strenght, magic, agility, endurance, luck, physical, gun, fire, ice, electric, wind, psychic, nuclear, bless, curse } = unpackedJack();
+
+    html = `
     <div class="personaProfiles">
         <div class="profileBackground"></div>
         <h1 class="profileNameandArcana">Jack-o-Lantern --- ${arcana}</h1>
@@ -42,9 +26,9 @@ function JackOLantern() {
                 <td>${luck}</td>
                         </tr> 
                     </table>`;
-        elementsTable();
-        document.getElementById('wrapper').innerHTML = html;
-    
+    elementsTable();
+    document.getElementById('wrapper').innerHTML = html;
+
 
     function elementsTable() {
         html += `
@@ -91,10 +75,11 @@ function JackOLantern() {
         </tr> `;
         for (var skill in skillData) {
             for (var thing in skillData[skill].persona) {
-                if (skillData[skill].persona.hasOwnProperty('Jack-o-Lantern') && thing == 'Jack-o-Lantern') {
-                    html +=  `
+
+                if (skillData[skill].persona.hasOwnProperty('Jack_O_Lantern') && thing == 'Jack_O_Lantern') {
+                    html += `
         <tr>
-            <td>${skillData[skill].persona.Arsene}</td>
+            <td>${skillData[skill].persona.Jack_O_Lantern}</td>
             <td>${skillData[skill].name}</td>
             <td>${skillData[skill].type}</td>
             <td>${skillData[skill].description}</td>
@@ -103,7 +88,7 @@ function JackOLantern() {
                 }
             }
 
-    
+
         }
         // html+= `</table>`       
         fuse();
@@ -111,16 +96,42 @@ function JackOLantern() {
 
     function fuse() {
         html += `
-        <h1 class="profileFuseFromHeader">Fuse From This :</h1>
-        <div class="profileFuseFrom">FuseFrom</div>
+        <h1 class="profileFuseFromHeader">Fuse From This:</h1>
+        <table class="profileFuseFrom">
+        <tr>
+            <th>Cost</th>
+            <th>Ingredients</th>
+        </tr>`
+        for (fusecombos of fuseData.fuseTo.Jack_O_Lantern) {
+            html +=
+                `<tr>
+            <td>${fusecombos.fuseCost}</td>
+            <td>${fusecombos.combo}</td>
+        </tr>
+        `;
+        };
+        html +=
+            `</table>
         <h1 class="profileFuseToHeader">Fuse To This :</h1>
-        <div class="profileFuseTo">FuseTo</div>
-        </div>
+        <table class="profileFuseTo">
+        <tr>
+            <th>Cost</th>
+            <th>Ingredients</th>
+        </tr>
+        `
+        for (fusecombos of fuseData.fuseFrom.Jack_O_Lantern) {
+            html += `
+        <tr>
+            <td>${fusecombos.fuseCost}</td>
+            <td>${fusecombos.combo}</td>
+        </tr>`;
+        };
+
+
+        html += `
+      </table>
         </div>`;
     }
-
+    console.log(html)
 }
-
-
-
 

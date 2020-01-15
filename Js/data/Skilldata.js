@@ -1,16 +1,6 @@
-var skillData = {
-    Agi : {
-        name:'Agi',
-        type:'Fire',
-        description: 'Deals weak Fire damage to 1 foe',
-        cost : '4 SP',
-        persona : {
-            Hua_Po : 0,
-            Jack_O_Lantern : 0,
-            Onmoraki : 13,
-            Succubus : 8,
-        }
-    },
+var skillData
+
+skillData = {
     Adverse_resolve: {
         name: 'Adverse Resolve',
         type: 'Passive',
@@ -26,6 +16,18 @@ var skillData = {
         }
 
     },
+    Agi: {
+        name: 'Agi',
+        type: 'Fire',
+        description: 'Deals weak Fire damage to 1 foe.',
+        cost: '4 SP',
+        persona: {
+            Hua_Po: 0,
+            Jack_O_Lantern: 0,
+            Onmoraki: 13,
+            Succubus: 8,
+        }
+    },
     Cleave: {
         name: 'Cleave',
         type: 'Physical',
@@ -37,10 +39,25 @@ var skillData = {
 
         }
     },
+    Dazzler: {
+        name: 'Dazzler',
+        type: 'Ailment',
+        description: 'Inflict Dizzy (High Odds!) to 1 foe',
+        cost: '5 SP',
+        persona: {
+            Angel: 0,
+            Arch_Angel: 0,
+            Jack_O_Lantern: 5,
+            Mokoi: 0,
+            Naga: 27
+
+        }
+
+    },
     Dream_Needle: {
         name: 'Dream Needle',
         type: 'Physical',
-        description: `Deals medium Physical damage and inflicts sleep to 1 foe`,
+        description: `Deals medium Physical damage and inflicts sleep to 1 foe.`,
         cost: '8% HP',
         persona: {
             Arsene: 5,
@@ -61,10 +78,34 @@ var skillData = {
 
         }
     },
+    Rankunda: {
+        name: 'Rakunda',
+        type: 'Support',
+        description: `Decreases 1 foe's Defence for 3 turns.`,
+        cost: '8 SP',
+        persona: {
+            Frost: 13,
+            Jack_O_Lantern: 0,
+            Jikokuten: 0,
+            Kodama: 0,
+            Koropokuguru: 12,
+            Leanan_Sidhe: 0,
+            Queens_Necklace: 0,
+        }
+    },
+    Resist_Sleep : {
+        name: 'Resist Sleep',
+        type: 'Passive',
+        description: 'Reduces susceptibility to sleep.',
+        cost : '-',
+        persona : {
+            Jack_O_Lantern : 7,
+        }
+    },
     Sukunda: {
         name: 'Sukunda',
         type: 'Support',
-        description: `Decreases 1 foe's Agility for 3 turns`,
+        description: `Decreases 1 foe's Agility for 3 turns.`,
         cost: '8 SP',
         persona: {
             Arsene: 4,
@@ -74,8 +115,23 @@ var skillData = {
 
         }
     },
+    Sharp_Student: {
+        name: 'Sharp Student',
+        type: 'Passive',
+        description: 'Lowers odds of reciving a critical hit.',
+        cost: '-',
+        persona: {
+            Eligor: 0,
+            Ippon_Datara: 16,
+            Jack_O_Lantern: 4,
+            Scathach: 0,
+            Silky: 10,
+            Sudama: 0,
+            Zouchouten: 33
+        }
+    },
 
 
 
 
-}
+};
