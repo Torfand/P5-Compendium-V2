@@ -26,23 +26,9 @@ function JackOLantern() {
                 <td>${luck}</td>
                         </tr> 
                     </table>`;
-    //elementsTable();
-
-
-
     elementsTable(physical, gun, fire, ice, electric, wind, psychic, nuclear, bless, curse);
-    //skillTable();
-
-
-
     skillTable();
-    // html+= `</table>`       
-    //fuse();
-
-
-
     fuse();
-
     document.getElementById('wrapper').innerHTML = html;
     console.log(html)
 }
