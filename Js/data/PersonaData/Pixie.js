@@ -34,7 +34,7 @@ function Pixie() {
         <h1 class="profileElementsHeader">Elements :</h1>
         <table class="profileElements">
         <tr>
-            <th>Physical
+            <th>Physical</th>
             <th>Gun</th>
             <th>Fire</th>
             <th>Ice</th>
