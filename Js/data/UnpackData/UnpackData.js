@@ -40,3 +40,23 @@ function unpackedJack() {
     let curse = Jack.elementalAttributes.curse;
     return { arcana, strenght, magic, agility, endurance, luck, physical, gun, fire, ice, electric, wind, psychic, nuclear, bless, curse };
 }
+function unpackedPixie() {
+    let Pixie = model.personaInfo.personaList[2];
+    let arcana = Pixie.Arcana;
+    let strenght = Pixie.attributes.str;
+    let magic = Pixie.attributes.mag;
+    let endurance = Pixie.attributes.end;
+    let agility = Pixie.attributes.agi;
+    let luck = Pixie.attributes.lck;
+    let physical = Pixie.elementalAttributes.physical;
+    let gun = Pixie.elementalAttributes.gun;
+    let fire = Pixie.elementalAttributes.fire;
+    let ice = Pixie.elementalAttributes.ice;
+    let electric = Pixie.elementalAttributes.electric;
+    let wind = Pixie.elementalAttributes.wind;
+    let psychic = Pixie.elementalAttributes.psychic;
+    let nuclear = Pixie.elementalAttributes.nuclear;
+    let bless = Pixie.elementalAttributes.bless;
+    let curse = Pixie.elementalAttributes.curse;
+    return { arcana, strenght, magic, agility, endurance, luck, physical, gun, fire, ice, electric, wind, psychic, nuclear, bless, curse };
+}

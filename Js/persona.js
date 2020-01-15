@@ -6,7 +6,7 @@ showhide = true;
 function diplayPersonaContent() {
   for (personas of model.personaInfo.personaList) {
     html += `
-    <div class="${showhide == true ? 'row' : 'showHide'}">
+    <div class="${showhide == true ? "row" : "showHide"}">
       <div class="cell" data-title="Name" onclick="${personas.ProfileID}()">${personas.Name}
       </div>
       <div class="cell" data-title="Arcana">${personas.Arcana}
@@ -24,9 +24,8 @@ function diplayPersonaContent() {
       <div class="cell sideBorderleft" data-title="Luck">&nbsp
       </div>
     </div>`;
-    console.log(html)
   }
-  document.getElementById('wrapper').innerHTML = html;
+  document.getElementById("wrapper").innerHTML = html;
 }
 function displayTable() {
   html = `<div class="table">      
@@ -41,14 +40,13 @@ function displayTable() {
       <div class="cell"><button onclick="collapse()">☰</button></div>  
     </div>
     `;
-  document.getElementById('wrapper').innerHTML = html;
+  document.getElementById("wrapper").innerHTML = html;
 }
 
 //controller
 function collapse() {
   showhide = showhide == false ? true : false;
-  html = ' '
+  html = " ";
   displayTable();
   diplayPersonaContent();
 }
-

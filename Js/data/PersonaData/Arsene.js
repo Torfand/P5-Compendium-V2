@@ -1,12 +1,11 @@
 //view
-html = '';
-
+html = "";
+let sortArray = [];
 function Arsene() {
+  let {arcana,strenght,magic,endurance,agility,luck,physical,gun,fire,ice,electric,wind,psychic,nuclear,bless,curse} = unpackedArsene();
 
-
-    let { arcana, strenght, magic, endurance, agility, luck, physical, gun, fire, ice, electric, wind, psychic, nuclear, bless, curse } = unpackedArsene();
-
-        html = `
+ 
+  html = `
     <div class="personaProfiles">
         <div class="profileBackground"></div>
         <h1 class="profileNameandArcana">Arsene --- ${arcana}</h1>
@@ -27,12 +26,11 @@ function Arsene() {
                 <td>${luck}</td>
                         </tr> 
                     </table>`;
-        elementsTable();
-        document.getElementById('wrapper').innerHTML = html;
-    
+  elementsTable();
+  document.getElementById("wrapper").innerHTML = html;
 
-    function elementsTable() {
-        html += `
+  function elementsTable() {
+    html += `
         <h1 class="profileElementsHeader">Elements :</h1>
         <table class="profileElements">
         <tr>
@@ -59,13 +57,12 @@ function Arsene() {
             <td>${bless}</td>
             <td>${curse}</td>
         </tr> 
-        </table>`
-        skillTable();
-    }
+        </table>`;
+    skillTable();
+  }
 
-    function skillTable() {
-        html +=
-            ` <h1 class="profileSkillHeader">Skills :</h1>
+  function skillTable() {
+    html += ` <h1 class="profileSkillHeader">Skills :</h1>
         <table class="profileSkills">
         <tr>
         <th>Level</th>
@@ -74,10 +71,10 @@ function Arsene() {
         <th>Description</th>
         <th>Cost</th>  
         </tr> `;
-        for (var skill in skillData) {
-            for (var thing in skillData[skill].persona) {
-                if (skillData[skill].persona.hasOwnProperty('Arsene') && thing == 'Arsene') {
-                    html +=  `
+    for (var skill in skillData) {
+      for (var thing in skillData[skill].persona) {
+        if (skillData[skill].persona.hasOwnProperty("Arsene") && thing == "Arsene") {
+          html += `
         <tr>
             <td>${skillData[skill].persona.Arsene}</td>
             <td>${skillData[skill].name}</td>
@@ -85,55 +82,46 @@ function Arsene() {
             <td>${skillData[skill].description}</td>
             <td>${skillData[skill].cost}</td>
         </tr>`;
-                }
-            }
-
-    
         }
-        html+= `</table>`       
-        fuse();
+      }
     }
+    html += `</table>`;
+    fuse();
+  }
 
-    function fuse() {
-        html += `
+  function fuse() {
+    html += `
         <h1 class="profileFuseFromHeader">Fuse From This:</h1>
         <table class="profileFuseFrom">
         <tr>
             <th>Cost</th>
             <th>Ingredients</th>
-        </tr>` 
-        for(fusecombos of fuseData.fuseTo.Arsene) {
-      html +=  
-      `<tr>
+        </tr>`;
+    for (fusecombos of fuseData.fuseTo.Arsene) {
+      html += `<tr>
             <td>${fusecombos.fuseCost}</td>
             <td>${fusecombos.combo}</td>
         </tr>
-        `;};
-        html+= 
-        `</table>
+        `;
+    }
+    html += `</table>
         <h1 class="profileFuseToHeader">Fuse To This :</h1>
         <table class="profileFuseTo">
         <tr>
             <th>Cost</th>
             <th>Ingredients</th>
         </tr>
-        `
-        for(fusecombos of fuseData.fuseFrom.Arsene){
-            html+= `
+        `;
+    for (fusecombos of fuseData.fuseFrom.Arsene) {
+      html += `
         <tr>
             <td>${fusecombos.fuseCost}</td>
             <td>${fusecombos.combo}</td>
-        </tr>`;};
-        
-        
-      html +=  `
-      </table>
-        </div>`
+        </tr>`;
     }
-   
+
+    html += `
+      </table>
+        </div>`;
+  }
 }
-
-
-
-
-
