@@ -60,3 +60,24 @@ function unpackedPixie() {
     let curse = Pixie.elementalAttributes.curse;
     return { arcana, strenght, magic, agility, endurance, luck, physical, gun, fire, ice, electric, wind, psychic, nuclear, bless, curse };
 }
+
+function UnpackedAgathion() {
+    let Agathion = model.personaInfo.personaList[3];
+    let arcana = Agathion.Arcana;
+    let strenght = Agathion.attributes.str;
+    let magic = Agathion.attributes.mag;
+    let endurance = Agathion.attributes.end;
+    let agility = Agathion.attributes.agi;
+    let luck = Agathion.attributes.lck;
+    let physical = Agathion.elementalAttributes.physical;
+    let gun = Agathion.elementalAttributes.gun;
+    let fire = Agathion.elementalAttributes.fire;
+    let ice = Agathion.elementalAttributes.ice;
+    let electric = Agathion.elementalAttributes.electric;
+    let wind = Agathion.elementalAttributes.wind;
+    let psychic = Agathion.elementalAttributes.psychic;
+    let nuclear = Agathion.elementalAttributes.nuclear;
+    let bless = Agathion.elementalAttributes.bless;
+    let curse = Agathion.elementalAttributes.curse;
+    return { arcana, strenght, magic, agility, endurance, luck, physical, gun, fire, ice, electric, wind, psychic, nuclear, bless, curse };
+}

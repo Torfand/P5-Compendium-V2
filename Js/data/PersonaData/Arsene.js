@@ -7,7 +7,7 @@ function Arsene() {
  
   html = `
     <div class="personaProfiles">
-        <div class="profileBackground"></div>
+        
         <h1 class="profileNameandArcana">Arsene --- ${arcana}</h1>
         <h1 class="profileAttributeHeader">Attributes:</h1>
         <table class="profileAttributes">
@@ -123,5 +123,6 @@ function Arsene() {
     html += `
       </table>
         </div>`;
+        console.log(html)
   }
 }

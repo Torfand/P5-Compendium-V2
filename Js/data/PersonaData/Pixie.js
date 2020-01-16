@@ -39,6 +39,7 @@ function Pixie() {
 
 
     pixiefuse();
+    pixiefuseTo();
     document.getElementById('wrapper').innerHTML = html;
 
 
@@ -72,7 +73,7 @@ function pixieelementsTable(physical, gun, fire, ice, electric, wind, psychic, n
                     <td>${curse}</td>
                 </tr> 
                 </table>`;
-}
+};
 
 function pixieskillTable() {
     html +=
@@ -100,7 +101,7 @@ function pixieskillTable() {
         }
     }
     html += `</table>`;
-}
+};
 
 
 function pixiefuse() {
@@ -120,6 +121,12 @@ function pixiefuse() {
         `;
     }
     ;
+    
+};
+
+
+
+function pixiefuseTo() {
     html +=
         `</table>
         <h1 class="profileFuseToHeader">Fuse To This :</h1>
@@ -140,7 +147,5 @@ function pixiefuse() {
     html += `
       </table>
         </div>`;
-}
-
-
+};
 

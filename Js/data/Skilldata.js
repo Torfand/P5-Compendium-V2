@@ -1,6 +1,7 @@
 var skillData;
 
 skillData = {
+
   Adverse_resolve: {
     name: "Adverse Resolve",
     type: "Passive",
@@ -14,8 +15,8 @@ skillData = {
       Thanatos_Picaro: 73,
       Raphael: 82,
     }
-
   },
+
   Agi: {
     name: "Agi",
     type: "Fire",
@@ -27,8 +28,39 @@ skillData = {
       Onmoraki: 13,
       Succubus: 8
     }
-
   },
+
+  Baisudi: {
+    name: 'Baisudi',
+    type: 'Healing',
+    description: 'Cures Burn/Freeze/Shock of 1 ally',
+    cost: '4 SP',
+    persona: {
+      Agathion: 0,
+      Angel: 14,
+      Jack_Frost: 0,
+      Nigi_Mitama: 0,
+
+    }
+  },
+
+  Bufu: {
+    name: 'Bufu',
+    type: 'Ice',
+    description: 'Deals Weak Ice damage to 1 foe.',
+    cost: '4 SP',
+    persona: {
+      Andras: 0,
+      Apsaras: 0,
+      Genbu: 0,
+      Jack_Frost: 0,
+      Koropokuguru: 0,
+      Kushi_Mitama: 0,
+      Saki_Mitama: 0,
+      Silky: 0
+    }
+  },
+
   Cleave: {
     name: "Cleave",
     type: "Physical",
@@ -38,8 +70,8 @@ skillData = {
       Arsene: 2,
       Berith: 0
     }
-
   },
+
   Dazzler: {
     name: "Dazzler",
     type: "Ailment",
@@ -54,6 +86,7 @@ skillData = {
     }
 
   },
+
   Dia: {
     name: "Dia",
     type: "Healing",
@@ -67,6 +100,25 @@ skillData = {
     }
 
   },
+  Dodge_Electricity: {
+    name: 'Dodge Electricity',
+    type: 'Passive',
+    description: 'Double eveasion rate against Elecric attacks',
+    cost: '-',
+    persona: {
+      Agathion: 8,
+      Chorozon: 30,
+      Koh_i_Noor: 0,
+      Makami: 20,
+      Mokoi: 13,
+      Nekomata: 22,
+      Shiisaa: 21,
+
+
+
+    }
+  },
+
   Dream_Needle: {
     name: "Dream Needle",
     type: "Physical",
@@ -80,6 +132,7 @@ skillData = {
     }
 
   },
+
   Eiha: {
     name: "Eiha",
     type: "Curse",
@@ -91,6 +144,60 @@ skillData = {
       Slime: 11
     }
   },
+  Freeze_Boost: {
+    name: 'Freeze Boost',
+    type: 'Passive',
+    description: 'Increases chance of inflicting Freeze',
+    cost: '-',
+    persona: {
+      Baphomet: 63,
+      Jack_Frost: 15,
+      King_Frost: 62,
+      Lilim: 34,
+    }
+  },
+  Lunge: {
+    name: 'Lunge',
+    type: 'Physical',
+    description: 'Deals Weak Physical damage to 1 foe',
+    cost: '5% HP',
+    persona: {
+      Agathion: 4,
+      Bicorn: 0,
+      Kelpie: 0,
+      Mandrake: 4,
+      Slime: 0,
+
+    }
+  },
+
+  Ice_Break: {
+    name: 'Ice Break',
+    type: 'Ice',
+    description: 'Negates Ice resistances of all foes',
+    cost: '15 SP',
+    persona: {
+      Andras: 15,
+      Belphegor: 39,
+      Jack_Frost: 0,
+      King_Frost: 0
+    }
+  },
+  Mabufu: {
+    name: 'Mabufu',
+    type: 'Ice',
+    description: 'Deals Weak ice damage to all foes',
+    cost: '10 SP',
+    persona: {
+      Andras: 15,
+      Genbu: 10,
+      Jack_Frost: 12,
+      Koropokuguru: 14,
+      Regent: 0,
+      Sui_ki: 0,
+    }
+  },
+
   Patra: {
     name: "Patra",
     type: "Healing",
@@ -101,7 +208,22 @@ skillData = {
       Pixie: 3,
       Silky: 9
     }
+  },
+  Rakukaja: {
+    name: 'Rakukaja',
+    type: 'Support',
+    description: `Increases 1 ally's Defence for 3 turns`,
+    cost: '8 SP',
+    persona: {
+      Agathion: 6,
+      Belphegor: 0,
+      Izanagi_Picaro: 0,
+      Kin_Ki: 0,
+      Lamia: 0,
+      Queens_Necklace: 0,
+      Saki_Mitama: 8,
 
+    }
   },
   Rankunda: {
     name: "Rakunda",
@@ -109,7 +231,7 @@ skillData = {
     description: `Decreases 1 foe's Defence for 3 turns.`,
     cost: "8 SP",
     persona: {
-      Frost: 13,
+      Jack_Frost: 13,
       Jack_O_Lantern: 0,
       Jikokuten: 0,
       Kodama: 0,
@@ -119,13 +241,14 @@ skillData = {
     }
 
   },
-  Resist_Confuse : {
-    name :'Resist Confuse',
-    type : 'Passive',
-    description : 'Reduce suceptibility to Confuse.',
-    cost : '-',
-    persona : {
-      Pixie : 6,
+
+  Resist_Confuse: {
+    name: 'Resist Confuse',
+    type: 'Passive',
+    description: 'Reduce suceptibility to Confuse.',
+    cost: '-',
+    persona: {
+      Pixie: 6,
       Red_Rider: 44,
     }
   },
@@ -139,6 +262,7 @@ skillData = {
     }
 
   },
+
   Sukunda: {
     name: "Sukunda",
     type: "Support",
@@ -150,8 +274,8 @@ skillData = {
       Mandrake: 5,
       Sandman: 25
     }
-
   },
+
   Sharp_Student: {
     name: "Sharp Student",
     type: "Passive",
@@ -166,8 +290,8 @@ skillData = {
       Sudama: 0,
       Zouchouten: 33
     }
-
   },
+
   Tarukaja: {
     name: "Tarukaja",
     type: "Support",
@@ -188,8 +312,8 @@ skillData = {
       Rakshasa: 0,
       Shiki_Ouji: 0
     }
-
   },
+
   Zio: {
     name: "Zio",
     type: "Electric",
@@ -200,5 +324,6 @@ skillData = {
       Pixie: 0,
       Shiisaa: 0
     }
-  }
+  },
+
 };
