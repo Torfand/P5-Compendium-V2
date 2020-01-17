@@ -103,7 +103,7 @@ skillData = {
   Dodge_Electricity: {
     name: 'Dodge Electricity',
     type: 'Passive',
-    description: 'Double eveasion rate against Elecric attacks',
+    description: 'Double eveasion rate against Electric attacks',
     cost: '-',
     persona: {
       Agathion: 8,

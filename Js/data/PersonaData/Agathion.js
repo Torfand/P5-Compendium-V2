@@ -100,11 +100,11 @@ function Agathionfuse() {
             <th>Cost</th>
             <th>Ingredients</th>
         </tr>`;
-    // for (fusecombos of fuseData.fuseTo.Agathion) {
+    // for (fusecombo of fuseData.fuseTo.Agathion) {
     //     html +=
     //         `<tr>
-    //         <td>${fusecombos.fuseCost}</td>
-    //         <td>${fusecombos.combo}</td>
+    //         <td>${fusecombo.cost}</td>
+    //         <td>${fusecombo.combo}</td>
     //     </tr>
     //     `;
     // }
@@ -124,11 +124,11 @@ function AgathionfuseTo() {
             <th>Ingredients</th>
         </tr>
         `;
-    // for (fusecombos of fuseData.fuseFrom.Agathion) {
+    // for (fusecombo of fuseData.fuseFrom.Agathion) {
     //     html += `
     //     <tr>
-    //         <td>${fusecombos.fuseCost}</td>
-    //         <td>${fusecombos.combo}</td>
+    //         <td>${fusecombo.cost}</td>
+    //         <td>${fusecombo.combo}</td>
     //     </tr>`;
     // }
     ;

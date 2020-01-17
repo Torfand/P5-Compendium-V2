@@ -99,11 +99,11 @@ function jackfuse() {
         <th>Cost</th>
         <th>Ingredients</th>
         </tr>`;
-    for (fusecombos of fuseData.fuseTo.Jack_O_Lantern) {
+    for (fusecombo of fuseData.fuseTo.Jack_O_Lantern) {
         html +=
             `<tr>
-            <td>${fusecombos.fuseCost}</td>
-            <td>${fusecombos.combo}</td>
+            <td>${fusecombo.cost}</td>
+            <td>${fusecombo.combo}</td>
             </tr>
             `;
     }
@@ -117,11 +117,11 @@ function jackfuse() {
         <th>Ingredients</th>
         </tr>
         `;
-    for (fusecombos of fuseData.fuseFrom.Jack_O_Lantern) {
+    for (fusecombo of fuseData.fuseFrom.Jack_O_Lantern) {
         html += `
             <tr>
-            <td>${fusecombos.fuseCost}</td>
-            <td>${fusecombos.combo}</td>
+            <td>${fusecombo.cost}</td>
+            <td>${fusecombo.combo}</td>
             </tr>`;
     }
     ;

@@ -97,10 +97,10 @@ function Arsene() {
             <th>Cost</th>
             <th>Ingredients</th>
         </tr>`;
-    for (fusecombos of fuseData.fuseTo.Arsene) {
+    for (fusecombo of fuseData.fuseTo.Arsene) {
       html += `<tr>
-            <td>${fusecombos.fuseCost}</td>
-            <td>${fusecombos.combo}</td>
+            <td>${fusecombo.cost}</td>
+            <td>${fusecombo.combo}</td>
         </tr>
         `;
     }
@@ -112,11 +112,11 @@ function Arsene() {
             <th>Ingredients</th>
         </tr>
         `;
-    for (fusecombos of fuseData.fuseFrom.Arsene) {
+    for (fusecombo of fuseData.fuseFrom.Arsene) {
       html += `
         <tr>
-            <td>${fusecombos.fuseCost}</td>
-            <td>${fusecombos.combo}</td>
+            <td>${fusecombo.cost}</td>
+            <td>${fusecombo.combo}</td>
         </tr>`;
     }
 

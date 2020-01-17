@@ -112,11 +112,11 @@ function pixiefuse() {
             <th>Cost</th>
             <th>Ingredients</th>
         </tr>`;
-    for (fusecombos of fuseData.fuseTo.Pixie) {
+    for (fusecombo of fuseData.fuseTo.Pixie) {
         html +=
             `<tr>
-            <td>${fusecombos.fuseCost}</td>
-            <td>${fusecombos.combo}</td>
+            <td>${fusecombo.fusecost}</td>
+            <td>${fusecombo.combo}</td>
         </tr>
         `;
     }
@@ -136,11 +136,11 @@ function pixiefuseTo() {
             <th>Ingredients</th>
         </tr>
         `;
-    for (fusecombos of fuseData.fuseFrom.Pixie) {
+    for (fusecombo of fuseData.fuseFrom.Pixie) {
         html += `
         <tr>
-            <td>${fusecombos.fuseCost}</td>
-            <td>${fusecombos.combo}</td>
+            <td>${fusecombo.cost}</td>
+            <td>${fusecombo.combo}</td>
         </tr>`;
     }
     ;
