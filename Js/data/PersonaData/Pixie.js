@@ -38,8 +38,8 @@ function Pixie() {
 
 
 
-    pixiefuse();
     pixiefuseTo();
+    pixiefuseFrom();
     document.getElementById('wrapper').innerHTML = html;
 
 
@@ -104,10 +104,10 @@ function pixieskillTable() {
 };
 
 
-function pixiefuse() {
+function pixiefuseTo() {
     html += `
-        <h1 class="profileFuseFromHeader">Fuse From This:</h1>
-        <table class="profileFuseFrom">
+        <h1 class="profileFuseToHeader">Fuse To This:</h1>
+        <table class="profileFuseTo">
         <tr>
             <th>Cost</th>
             <th>Ingredients</th>
@@ -115,7 +115,7 @@ function pixiefuse() {
     for (fusecombo of fuseData.fuseTo.Pixie) {
         html +=
             `<tr>
-            <td>${fusecombo.fusecost}</td>
+            <td>${fusecombo.cost}</td>
             <td>${fusecombo.combo}</td>
         </tr>
         `;
@@ -126,11 +126,11 @@ function pixiefuse() {
 
 
 
-function pixiefuseTo() {
+function pixiefuseFrom() {
     html +=
-        `</table>
-        <h1 class="profileFuseToHeader">Fuse To This :</h1>
-        <table class="profileFuseTo">
+        `
+        <h1 class="profileFuseFromHeader">Fuse From This :</h1>
+        <table class="profileFuseFrom">
         <tr>
             <th>Cost</th>
             <th>Ingredients</th>

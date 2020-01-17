@@ -28,9 +28,10 @@ function JackOLantern() {
                     </table>`;
     jackelementsTable(physical, gun, fire, ice, electric, wind, psychic, nuclear, bless, curse);
     jackskillTable();
-    jackfuse();
+    jackfuseTo();
+    jackfuseFrom();
     document.getElementById('wrapper').innerHTML = html;
-    console.log(html)
+   
 }
 function jackelementsTable(physical, gun, fire, ice, electric, wind, psychic, nuclear, bless, curse) {
     html += `
@@ -91,10 +92,10 @@ function jackskillTable() {
 }
 
 
-function jackfuse() {
+function jackfuseTo() {
     html += `
-        <h1 class="profileFuseFromHeader">Fuse From This:</h1>
-        <table class="profileFuseFrom">
+        <h1 class="profileFuseToHeader">Fuse To This:</h1>
+        <table class="profileFuseTo">
         <tr>
         <th>Cost</th>
         <th>Ingredients</th>
@@ -108,10 +109,14 @@ function jackfuse() {
             `;
     }
     ;
+    
+}
+
+function jackfuseFrom() {
     html +=
         `</table>
-        <h1 class="profileFuseToHeader">Fuse To This :</h1>
-        <table class="profileFuseTo">
+        <h1 class="profileFuseFromHeader">Fuse From This :</h1>
+        <table class="profileFuseFrom">
         <tr>
         <th>Cost</th>
         <th>Ingredients</th>

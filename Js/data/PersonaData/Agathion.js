@@ -19,15 +19,15 @@ function Agathion() {
                 <tr>
                 <td>${strenght}</td>
                 <td>${magic}</td>
-                <td>${agility}</td>
                 <td>${endurance}</td>
+                <td>${agility}</td>
                 <td>${luck}</td>
                 </tr> 
                 </table>`;
     AgathionElementsTable(physical, gun, fire, ice, electric, wind, psychic, nuclear, bless, curse);
     AgathionSkillTable();
-    Agathionfuse();
     AgathionfuseTo();
+    AgathionfuseFrom();
     document.getElementById('wrapper').innerHTML = html;
 }
 
@@ -92,45 +92,45 @@ function AgathionSkillTable() {
 };
 
 
-function Agathionfuse() {
+function AgathionfuseTo() {
     html += `
-        <h1 class="profileFuseFromHeader">Fuse From This:</h1>
-        <table class="profileFuseFrom">
+        <h1 class="profileFuseToHeader">Fuse To This:</h1>
+        <table class="profileFuseTo">
         <tr>
             <th>Cost</th>
             <th>Ingredients</th>
         </tr>`;
-    // for (fusecombo of fuseData.fuseTo.Agathion) {
-    //     html +=
-    //         `<tr>
-    //         <td>${fusecombo.cost}</td>
-    //         <td>${fusecombo.combo}</td>
-    //     </tr>
-    //     `;
-    // }
+    for (fusecombo of fuseData.fuseTo.Agathion) {
+        html +=
+            `<tr>
+            <td>${fusecombo.cost}</td>
+            <td>${fusecombo.combo}</td>
+        </tr>
+        `;
+    }
     ;
 
 };
 
 
 
-function AgathionfuseTo() {
+function AgathionfuseFrom() {
     html +=
         `</table>
-        <h1 class="profileFuseToHeader">Fuse To This :</h1>
-        <table class="profileFuseTo">
+        <h1 class="profileFuseFromHeader">Fuse From This :</h1>
+        <table class="profileFuseFrom">
         <tr>
             <th>Cost</th>
             <th>Ingredients</th>
         </tr>
         `;
-    // for (fusecombo of fuseData.fuseFrom.Agathion) {
-    //     html += `
-    //     <tr>
-    //         <td>${fusecombo.cost}</td>
-    //         <td>${fusecombo.combo}</td>
-    //     </tr>`;
-    // }
+    for (fusecombo of fuseData.fuseFrom.Agathion) {
+        html += `
+        <tr>
+            <td>${fusecombo.cost}</td>
+            <td>${fusecombo.combo}</td>
+        </tr>`;
+    }
     ;
     html += `
       </table>

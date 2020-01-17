@@ -89,19 +89,19 @@ body {
     grid-area: 7 / 1 / 8 / 13;
 }
 
-.profileFuseFromHeader {
+.profileFuseToHeader {
     grid-area: 8 / 1 / 9 / 13;
 }
 
-.profileFuseFrom {
+.profileFuseTo {
     grid-area: 9 / 1 / 10 / 13;
 }
 
-.profileFuseToHeader {
+.profileFuseFromHeader {
     grid-area: 10 / 1 / 11 / 13;
 }
 
-.profileFuseTo {
+.profileFuseFrom {
     grid-area: 11 / 1 / 12 / 13;
 }
 

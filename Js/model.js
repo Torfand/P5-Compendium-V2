@@ -35,7 +35,7 @@ model = {
             ProfileID:'Agathion',
             Name: 'Agathion',
             Arcana: 'Chariot',
-            attributes: { str: 3, mag: 4, end: 5, agi: 6, lck: 3 },
+            attributes: { str: 3, mag: 4, end: 5, agi: 7, lck: 3 },
              elementalAttributes: { physical: '-', gun: 'Resist', fire: '-', ice: '-', electric: 'Resist', 
                                  wind: 'Weak', psychic: '-', nuclear: '-', bless: '-', curse: `-`},
         },

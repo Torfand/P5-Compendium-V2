@@ -144,6 +144,19 @@ skillData = {
       Slime: 11
     }
   },
+Energy_drop: {
+  name:"Energy Drop",
+  type:'Healing',
+  description:'Cures Confunse/Fear/Despair/Rage/Brainwash of 1 ally.',
+  cost :'4 SP',
+  persona: {
+      Kikuri_Hime: 0,
+      Makami : 0,
+      Mandrake: 0,
+      Narcissius: 0,
+      Saki_Mitama:0,
+  }
+},
   Freeze_Boost: {
     name: 'Freeze Boost',
     type: 'Passive',

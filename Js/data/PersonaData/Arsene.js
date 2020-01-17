@@ -1,6 +1,6 @@
 //view
 html = "";
-let sortArray = [];
+
 function Arsene() {
   let {arcana,strenght,magic,endurance,agility,luck,physical,gun,fire,ice,electric,wind,psychic,nuclear,bless,curse} = unpackedArsene();
 

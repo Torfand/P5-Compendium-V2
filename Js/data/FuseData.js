@@ -27,7 +27,13 @@ fuseData = {
             { cost: '¥64,675', combo: `Hope Diamond (40-Death) & Leanan Sidhe (19-Lovers)`}
         ],
         Agathion: [
-            {cost: '¥4,807', combo : ``}
+            {cost: '¥4,807', combo : `Pixie (2-Lovers) & Arsene(1-Fool)`},
+            {cost:'¥16,219', combo:`Queen's Necklace (15-Emperess) & Slime(10-Chariot)`},
+            {cost:'¥ 17,182', combo:`Shiisa (16-Chariot) & Slime(10-Chariot)`},
+            {cost: '¥ 28,279', combo:`Koh-I-Noor (25-Priestess) & Slime (10-Chariot)`},
+            {cost: '¥ 50,707', combo: `Emperor's Amulet (35-Hanged Man) & Shiisa(16-Chariot)`},
+            {cost: '¥ 56,494', combo:`Hope Diamond (40-Death) & Slime(10-Chariot)`},
+            {cost: '¥82,054', combo:`Crystal Skull (50-Fool) & Slime (10-Chariot)`}
         ]
     },
 
@@ -53,6 +59,16 @@ fuseData = {
             { cost: 'Nothing here yet', combo: 'Nothing here yet' },
             { cost: 'Nothing here yet', combo: 'Nothing here yet' }
         ],
+        Agathion: [
+            { cost: 'Nothing here yet', combo: 'Nothing here yet' },
+            { cost: 'Nothing here yet', combo: 'Nothing here yet' },
+            { cost: 'Nothing here yet', combo: 'Nothing here yet' },
+            { cost: 'Nothing here yet', combo: 'Nothing here yet' },
+            { cost: 'Nothing here yet', combo: 'Nothing here yet' },
+            { cost: 'Nothing here yet', combo: 'Nothing here yet' },
+            { cost: 'Nothing here yet', combo: 'Nothing here yet' },
+            { cost: 'Nothing here yet', combo: 'Nothing here yet' },
+        ]
 
     }
 
