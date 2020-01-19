@@ -2,7 +2,23 @@
 html = '';
 
 function Mandrake() {
-    
+    let Mandrake  = model.personaInfo.personaList[4];
+    let arcana = Mandrake.Arcana;
+    let strenght = Mandrake.attributes.str;
+    let magic = Mandrake.attributes.mag;
+    let endurance = Mandrake.attributes.end;
+    let agility = Mandrake.attributes.agi;
+    let luck = Mandrake.attributes.lck;
+    let physical = Mandrake.elementalAttributes.physical;
+    let gun = Mandrake.elementalAttributes.gun;
+    let fire = Mandrake.elementalAttributes.fire;
+    let ice = Mandrake.elementalAttributes.ice;
+    let electric = Mandrake.elementalAttributes.electric;
+    let wind = Mandrake.elementalAttributes.wind;
+    let psychic = Mandrake.elementalAttributes.psychic;
+    let nuclear = Mandrake.elementalAttributes.nuclear;
+    let bless = Mandrake.elementalAttributes.bless;
+    let curse = Mandrake.elementalAttributes.curse;
     html = `
     <div class="personaProfiles">
         <div class="profileBackground"></div>
@@ -17,7 +33,7 @@ function Mandrake() {
                 <th>Luck</td>
                 </tr>
                 <tr>
-                <td></td>
+                <td>${strenght}</td>
                 <td></td>
                 <td></td>
                 <td></td>
