@@ -81,3 +81,24 @@ function UnpackedAgathion() {
     let curse = Agathion.elementalAttributes.curse;
     return { arcana, strenght, magic, agility, endurance, luck, physical, gun, fire, ice, electric, wind, psychic, nuclear, bless, curse };
 }
+
+function UnpackedMandrake() {
+    let Mandrake = model.personaInfo.personaList[4];
+    let arcana = Mandrake.Arcana;
+    let strenght = Mandrake.attributes.str;
+    let magic = Mandrake.attributes.mag;
+    let endurance = Mandrake.attributes.end;
+    let agility = Mandrake.attributes.agi;
+    let luck = Mandrake.attributes.lck;
+    let physical = Mandrake.elementalAttributes.physical;
+    let gun = Mandrake.elementalAttributes.gun;
+    let fire = Mandrake.elementalAttributes.fire;
+    let ice = Mandrake.elementalAttributes.ice;
+    let electric = Mandrake.elementalAttributes.electric;
+    let wind = Mandrake.elementalAttributes.wind;
+    let psychic = Mandrake.elementalAttributes.psychic;
+    let nuclear = Mandrake.elementalAttributes.nuclear;
+    let bless = Mandrake.elementalAttributes.bless;
+    let curse = Mandrake.elementalAttributes.curse;
+    return { arcana, strenght, magic, agility, endurance, luck, physical, gun, fire, ice, electric, wind, psychic, nuclear, bless, curse };
+}
