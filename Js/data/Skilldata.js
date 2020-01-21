@@ -222,6 +222,19 @@ Energy_drop: {
       Silky: 9
     }
   },
+  Pulinpa : {
+name: 'Pulinpa',
+type : 'Ailment',
+description:'Inflicts Confuse (High odds) to 1 foe.',
+cost: '5 SP',
+persona : {
+  Chorozon : 0,
+  Inugami : 0,
+  Nue : 22,
+  Onmoraki : 14,
+  Mandrake : 0,
+}
+  },
   Rakukaja: {
     name: 'Rakukaja',
     type: 'Support',
@@ -275,7 +288,20 @@ Energy_drop: {
     }
 
   },
+Skull_Cracker : {
+name : 'Skull Cracker',
+type : 'Physical',
+description : 'Deals Medium Physical damage and inflicts Confuse (Medium odds), to 1 foe.',
+cost: '10% HP',
+persona : {
+  Mandrake: 7,
+  Mokoi: 0,
+  Mothman : 0,
+  Nue: 0 ,
+  Shiisaa: 0,
 
+},
+},
   Sukunda: {
     name: "Sukunda",
     type: "Support",

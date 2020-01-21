@@ -1,12 +1,13 @@
 //view
 html = '';
 
-function Mandrake() {
-    let { arcana, strenght, magic, agility, endurance, luck, physical, gun, fire, ice, electric, wind, psychic, nuclear, bless, curse } = UnpackedMandrake();
+function Bicorn() {
+ let {  arcana, strenght, magic, agility, endurance, luck, physical, gun, fire, ice, electric, wind, psychic, nuclear, bless, curse  } = UnpackedBicorn();
+
     html = `
     <div class="personaProfiles">
         <div class="profileBackground"></div>
-        <h1 class="profileNameandArcana">Mandrake --- ${arcana}</h1>
+        <h1 class="profileNameandArcana">Bicorn --- ${arcana}</h1>
         <h1 class="profileAttributeHeader">Attributes:</h1>
         <table class="profileAttributes">
             <tr>
@@ -25,10 +26,10 @@ function Mandrake() {
                 </tr> 
                 </table>`;
 
-    MandrakeElementsTable(physical, gun, fire, ice, electric, wind, psychic, nuclear, bless, curse);
-    MandrakeSkillTable();
-    MandrakefuseTo();
-    MandrakefuseFrom();
+    BicornElementsTable(physical, gun, fire, ice, electric, wind, psychic, nuclear, bless, curse );
+    BicornSkillTable();
+    // BicornfuseTo();
+    // BicornfuseFrom();
     document.getElementById('wrapper').innerHTML = html;
 
 
@@ -36,7 +37,8 @@ function Mandrake() {
 
 };
 
-function MandrakeElementsTable(physical, gun, fire, ice, electric, wind, psychic, nuclear, bless, curse) {
+
+function BicornElementsTable (physical, gun, fire, ice, electric, wind, psychic, nuclear, bless, curse ){
     html += `
                 <h1 class="profileElementsHeader">Elements :</h1>
                 <table class="profileElements">
@@ -60,14 +62,14 @@ function MandrakeElementsTable(physical, gun, fire, ice, electric, wind, psychic
                     <td>${electric}</td>
                     <td>${wind}</td>
                     <td>${psychic}</td>
-                    <td>${nuclear}</td>
                     <td>${bless}</td>
+                    <td>${nuclear}</td>
                     <td>${curse}</td>
                 </tr> 
                 </table>`;
 }
 
-function MandrakeSkillTable() {
+function BicornSkillTable() {
     html +=
         ` <h1 class="profileSkillHeader">Skills :</h1>
         <table class="profileSkills">
@@ -80,10 +82,10 @@ function MandrakeSkillTable() {
         </tr> `;
     for (var skill in skillData) {
         for (var thing in skillData[skill].persona) {
-            if (skillData[skill].persona.hasOwnProperty('Mandrake') && thing == 'Mandrake') {
+            if (skillData[skill].persona.hasOwnProperty('Bicorn') && thing == 'Bicorn') {
                 html += `
         <tr>
-            <td>${skillData[skill].persona.Mandrake}</td>
+            <td>${skillData[skill].persona.Bicorn}</td>
             <td>${skillData[skill].name}</td>
             <td>${skillData[skill].type}</td>
             <td>${skillData[skill].description}</td>
@@ -96,48 +98,48 @@ function MandrakeSkillTable() {
 };
 
 
-function MandrakefuseTo() {
-    html += `
-        <h1 class="profileFuseToHeader">Fuse To This:</h1>
-        <table class="profileFuseTo">
-        <tr>
-            <th>Cost</th>
-            <th>Ingredients</th>
-        </tr>`;
-    for (fusecombo of fuseData.fuseTo.Mandrake) {
-        html +=
-            `<tr>
-            <td>${fusecombo.cost}</td>
-            <td>${fusecombo.combo}</td>
-        </tr>
-        `;
-    }
-    ;
+// function BicornfuseTo() {
+//     html += `
+//         <h1 class="profileFuseToHeader">Fuse To This:</h1>
+//         <table class="profileFuseTo">
+//         <tr>
+//             <th>Cost</th>
+//             <th>Ingredients</th>
+//         </tr>`;
+//     for (fusecombo of fuseData.fuseTo.Bicorn) {
+//         html +=
+//             `<tr>
+//             <td>${fusecombo.cost}</td>
+//             <td>${fusecombo.combo}</td>
+//         </tr>
+//         `;
+//     }
+//     ;
 
-};
+// };
 
 
 
-function MandrakefuseFrom() {
-    html +=
-        `</table>
-        <h1 class="profileFuseFromHeader">Fuse From This :</h1>
-        <table class="profileFuseFrom">
-        <tr>
-            <th>Cost</th>
-            <th>Ingredients</th>
-        </tr>
-        `;
-    for (fusecombo of fuseData.fuseFrom.Mandrake) {
-        html += `
-        <tr>
-            <td>${fusecombo.cost}</td>
-            <td>${fusecombo.combo}</td>
-        </tr>`;
-    }
-    ;
-    html += `
-      </table>
-        </div>`;
-};
+// function BicornfuseFrom() {
+//     html +=
+//         `</table>
+//         <h1 class="profileFuseFromHeader">Fuse From This :</h1>
+//         <table class="profileFuseFrom">
+//         <tr>
+//             <th>Cost</th>
+//             <th>Ingredients</th>
+//         </tr>
+//         `;
+//     for (fusecombo of fuseData.fuseFrom.Bicorn) {
+//         html += `
+//         <tr>
+//             <td>${fusecombo.cost}</td>
+//             <td>${fusecombo.combo}</td>
+//         </tr>`;
+//     }
+//     ;
+//     html += `
+//       </table>
+//         </div>`;
+// };
 

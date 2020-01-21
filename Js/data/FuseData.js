@@ -29,11 +29,19 @@ fuseData = {
         Agathion: [
             {cost: '¥4,807', combo : `Pixie (2-Lovers) & Arsene(1-Fool)`},
             {cost:'¥16,219', combo:`Queen's Necklace (15-Emperess) & Slime(10-Chariot)`},
-            {cost:'¥ 17,182', combo:`Shiisa (16-Chariot) & Slime(10-Chariot)`},
-            {cost: '¥ 28,279', combo:`Koh-I-Noor (25-Priestess) & Slime (10-Chariot)`},
-            {cost: '¥ 50,707', combo: `Emperor's Amulet (35-Hanged Man) & Shiisa(16-Chariot)`},
-            {cost: '¥ 56,494', combo:`Hope Diamond (40-Death) & Slime(10-Chariot)`},
+            {cost:'¥17,182', combo:`Shiisa (16-Chariot) & Slime(10-Chariot)`},
+            {cost: '¥28,279', combo:`Koh-I-Noor (25-Priestess) & Slime (10-Chariot)`},
+            {cost: '¥50,707', combo: `Emperor's Amulet (35-Hanged Man) & Shiisa(16-Chariot)`},
+            {cost: '¥56,494', combo:`Hope Diamond (40-Death) & Slime(10-Chariot)`},
             {cost: '¥82,054', combo:`Crystal Skull (50-Fool) & Slime (10-Chariot)`}
+        ],
+        Mandrake : [
+            {cost:'¥4,807', combo:  `Jack-O-Lantern (2-Magician) & Arsene (1-Fool)`},
+            {cost:'¥15,580', combo:  `Queen's Necklace (15-Empress & Mokoi (9-Death)`},
+            {cost:'¥19,756', combo:  `Matador(19-Death) & Mokoi (9-Death)`},
+            {cost:'¥35,695', combo:  `Orlov (30-Strenght) & Mokoi (9-Death)`},
+            {cost:'¥45,100', combo:  `Emperor's Amulet (35-Hanged Man) & Mokoi (9-Death)`},
+
         ]
     },
 
@@ -68,7 +76,12 @@ fuseData = {
             { cost: 'Nothing here yet', combo: 'Nothing here yet' },
             { cost: 'Nothing here yet', combo: 'Nothing here yet' },
             { cost: 'Nothing here yet', combo: 'Nothing here yet' },
-        ]
+        ],
+        Mandrake: [
+            { cost: 'Nothing here yet', combo: 'Nothing here yet' },
+            { cost: 'Nothing here yet', combo: 'Nothing here yet' },
+            { cost: 'Nothing here yet', combo: 'Nothing here yet' }
+        ],
 
     }
 

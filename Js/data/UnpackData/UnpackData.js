@@ -102,3 +102,23 @@ function UnpackedMandrake() {
     let curse = Mandrake.elementalAttributes.curse;
     return { arcana, strenght, magic, agility, endurance, luck, physical, gun, fire, ice, electric, wind, psychic, nuclear, bless, curse };
 }
+function UnpackedBicorn() {
+    let Bicorn = model.personaInfo.personaList[5];
+    let arcana = Bicorn.Arcana;
+    let strenght = Bicorn.attributes.str;
+    let magic = Bicorn.attributes.mag;
+    let agility = Bicorn.attributes.agi;
+    let endurance = Bicorn.attributes.end;
+    let luck = Bicorn.attributes.lck;
+    let physical = Bicorn.elementalAttributes.physical;
+    let gun = Bicorn.elementalAttributes.gun;
+    let fire = Bicorn.elementalAttributes.fire;
+    let ice = Bicorn.elementalAttributes.ice;
+    let electric = Bicorn.elementalAttributes.electric;
+    let wind = Bicorn.elementalAttributes.wind;
+    let psychic = Bicorn.elementalAttributes.psychic;
+    let nuclear = Bicorn.elementalAttributes.nuclear;
+    let bless = Bicorn.elementalAttributes.bless;
+    let curse = Bicorn.elementalAttributes.curse;
+    return {  arcana, strenght, magic, agility, endurance, luck, physical, gun, fire, ice, electric, wind, psychic, nuclear, bless, curse  };
+}
