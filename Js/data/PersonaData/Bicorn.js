@@ -28,8 +28,8 @@ function Bicorn() {
 
     BicornElementsTable(physical, gun, fire, ice, electric, wind, psychic, nuclear, bless, curse );
     BicornSkillTable();
-    // BicornfuseTo();
-    // BicornfuseFrom();
+    BicornfuseTo();
+    BicornfuseFrom();
     document.getElementById('wrapper').innerHTML = html;
 
 
@@ -98,48 +98,48 @@ function BicornSkillTable() {
 };
 
 
-// function BicornfuseTo() {
-//     html += `
-//         <h1 class="profileFuseToHeader">Fuse To This:</h1>
-//         <table class="profileFuseTo">
-//         <tr>
-//             <th>Cost</th>
-//             <th>Ingredients</th>
-//         </tr>`;
-//     for (fusecombo of fuseData.fuseTo.Bicorn) {
-//         html +=
-//             `<tr>
-//             <td>${fusecombo.cost}</td>
-//             <td>${fusecombo.combo}</td>
-//         </tr>
-//         `;
-//     }
-//     ;
+function BicornfuseTo() {
+    html += `
+        <h1 class="profileFuseToHeader">Fuse To This:</h1>
+        <table class="profileFuseTo">
+        <tr>
+            <th>Cost</th>
+            <th>Ingredients</th>
+        </tr>`;
+    for (fusecombo of fuseData.fuseTo.Bicorn) {
+        html +=
+            `<tr>
+            <td>${fusecombo.cost}</td>
+            <td>${fusecombo.combo}</td>
+        </tr>
+        `;
+    }
+    ;
 
-// };
+};
 
 
 
-// function BicornfuseFrom() {
-//     html +=
-//         `</table>
-//         <h1 class="profileFuseFromHeader">Fuse From This :</h1>
-//         <table class="profileFuseFrom">
-//         <tr>
-//             <th>Cost</th>
-//             <th>Ingredients</th>
-//         </tr>
-//         `;
-//     for (fusecombo of fuseData.fuseFrom.Bicorn) {
-//         html += `
-//         <tr>
-//             <td>${fusecombo.cost}</td>
-//             <td>${fusecombo.combo}</td>
-//         </tr>`;
-//     }
-//     ;
-//     html += `
-//       </table>
-//         </div>`;
-// };
+function BicornfuseFrom() {
+    html +=
+        `</table>
+        <h1 class="profileFuseFromHeader">Fuse From This :</h1>
+        <table class="profileFuseFrom">
+        <tr>
+            <th>Cost</th>
+            <th>Ingredients</th>
+        </tr>
+        `;
+    for (fusecombo of fuseData.fuseFrom.Bicorn) {
+        html += `
+        <tr>
+            <td>${fusecombo.cost}</td>
+            <td>${fusecombo.combo}</td>
+        </tr>`;
+    }
+    ;
+    html += `
+      </table>
+        </div>`;
+};
 

@@ -30,6 +30,22 @@ skillData = {
     }
   },
 
+  Apt_Pupil : {
+    name : 'Apt Pupil',
+    type: 'Passive',
+    description : 'Increases Critical rate.',
+    cost:'-',
+    persona:{
+      Andras : 13,
+      Aridane: 0,
+      Aridane_Picaro: 0,
+      Bicorn : 8,
+      Futsunushi: 80,
+      Sudama : 22,
+    }
+
+  },
+
   Baisudi: {
     name: 'Baisudi',
     type: 'Healing',
@@ -144,19 +160,19 @@ skillData = {
       Slime: 11
     }
   },
-Energy_drop: {
-  name:"Energy Drop",
-  type:'Healing',
-  description:'Cures Confunse/Fear/Despair/Rage/Brainwash of 1 ally.',
-  cost :'4 SP',
-  persona: {
+  Energy_drop: {
+    name: "Energy Drop",
+    type: 'Healing',
+    description: 'Cures Confunse/Fear/Despair/Rage/Brainwash of 1 ally.',
+    cost: '4 SP',
+    persona: {
       Kikuri_Hime: 0,
-      Makami : 0,
+      Makami: 0,
       Mandrake: 0,
       Narcissius: 0,
-      Saki_Mitama:0,
-  }
-},
+      Saki_Mitama: 0,
+    }
+  },
   Freeze_Boost: {
     name: 'Freeze Boost',
     type: 'Passive',
@@ -167,6 +183,23 @@ Energy_drop: {
       Jack_Frost: 15,
       King_Frost: 62,
       Lilim: 34,
+    }
+  },
+  Garu: {
+    name: 'Garu',
+    type: 'Wind',
+    description: 'Deals weak Wind damage to 1 foe.',
+    cost: '3 SP',
+    persona: {
+      Bicorn: 6,
+      High_Pixie: 0,
+      Kelpie: 0,
+      Kodama: 0,
+      Koppa_Tengu: 0,
+      Kushi_Mitama: 0,
+
+
+
     }
   },
   Lunge: {
@@ -196,6 +229,19 @@ Energy_drop: {
       King_Frost: 0
     }
   },
+  Ice_Wall: {
+    name: 'Ice Wall',
+    type: 'Support',
+    description: `Creates a shield on 1 Ally to reduce damage of Ice attacks for 3 turns.`,
+    cost: '18 SP',
+    persona: {
+      Apsaras: 0,
+      Bicorn: 7,
+      Chulainn: 0,
+      Onmoraki: 0,
+    }
+
+  },
   Mabufu: {
     name: 'Mabufu',
     type: 'Ice',
@@ -222,18 +268,18 @@ Energy_drop: {
       Silky: 9
     }
   },
-  Pulinpa : {
-name: 'Pulinpa',
-type : 'Ailment',
-description:'Inflicts Confuse (High odds) to 1 foe.',
-cost: '5 SP',
-persona : {
-  Chorozon : 0,
-  Inugami : 0,
-  Nue : 22,
-  Onmoraki : 14,
-  Mandrake : 0,
-}
+  Pulinpa: {
+    name: 'Pulinpa',
+    type: 'Ailment',
+    description: 'Inflicts Confuse (High odds) to 1 foe.',
+    cost: '5 SP',
+    persona: {
+      Chorozon: 0,
+      Inugami: 0,
+      Nue: 22,
+      Onmoraki: 14,
+      Mandrake: 0,
+    }
   },
   Rakukaja: {
     name: 'Rakukaja',
@@ -288,20 +334,20 @@ persona : {
     }
 
   },
-Skull_Cracker : {
-name : 'Skull Cracker',
-type : 'Physical',
-description : 'Deals Medium Physical damage and inflicts Confuse (Medium odds), to 1 foe.',
-cost: '10% HP',
-persona : {
-  Mandrake: 7,
-  Mokoi: 0,
-  Mothman : 0,
-  Nue: 0 ,
-  Shiisaa: 0,
+  Skull_Cracker: {
+    name: 'Skull Cracker',
+    type: 'Physical',
+    description: 'Deals Medium Physical damage and inflicts Confuse (Medium odds), to 1 foe.',
+    cost: '10% HP',
+    persona: {
+      Mandrake: 7,
+      Mokoi: 0,
+      Mothman: 0,
+      Nue: 0,
+      Shiisaa: 0,
 
-},
-},
+    },
+  },
   Sukunda: {
     name: "Sukunda",
     type: "Support",
@@ -328,6 +374,22 @@ persona : {
       Silky: 10,
       Sudama: 0,
       Zouchouten: 33
+    }
+  },
+
+  Tarunda: {
+    name: 'Tarunda',
+    type: 'Support',
+    description: `Decreases one foe's Attack power for 3 turns`,
+    cost: '8 SP',
+    persona: {
+      Bicorn: 0,
+      Hua_Po: 11,
+      Incubus: 8,
+      Orpheus: 0,
+      Queens_Necklace: 0,
+      Suzaku: 0,
+
     }
   },
 

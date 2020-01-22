@@ -42,7 +42,14 @@ fuseData = {
             {cost:'¥35,695', combo:  `Orlov (30-Strenght) & Mokoi (9-Death)`},
             {cost:'¥45,100', combo:  `Emperor's Amulet (35-Hanged Man) & Mokoi (9-Death)`},
 
-        ]
+        ],
+        Bicorn : [
+            {cost:'¥5,275', combo:  `Mandrake (3-Death) & Jack-O-Lantern (2-Magician)`},
+            {cost:'¥13,816', combo:  `Ippon-Dattara (13-Hermit) & Koropokguru (9-Hermit)`},
+            {cost:'¥15,580', combo:  `Queen's Necklace (15-Emperess) & Koropokguru (9-Hermit)`},
+            {cost:'¥20,935', combo:  `Stone of Scone (20-Fortune) & Koropokguru (9-Hermit)`},
+            {cost:'¥84,295', combo:  `Crystal Skuøø (50-Fool) & Ippon-Dattara (13-Hermit)`},
+        ],
     },
 
 
@@ -81,6 +88,12 @@ fuseData = {
             { cost: 'Nothing here yet', combo: 'Nothing here yet' },
             { cost: 'Nothing here yet', combo: 'Nothing here yet' },
             { cost: 'Nothing here yet', combo: 'Nothing here yet' }
+        ],
+        Bicorn : [
+            { cost: 'Nothing here yet', combo: 'Nothing here yet' },
+            { cost: 'Nothing here yet', combo: 'Nothing here yet' },
+            { cost: 'Nothing here yet', combo: 'Nothing here yet' },
+            { cost: 'Nothing here yet', combo: 'Nothing here yet' },
         ],
 
     }
