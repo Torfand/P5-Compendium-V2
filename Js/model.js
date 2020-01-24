@@ -55,6 +55,14 @@ model = {
             elementalAttributes: { physical: '-', gun: '-', fire: '-', ice: '-', electric: 'Weak', 
             wind: '-', psychic: '-', nuclear: '-', bless: '-', curse: `Resist`},
         },
+        {   
+            ProfileID : 'Geir',
+            Name: 'Geir',
+            Arcana: 'Geir',
+            attributes: { str: 5, mag: 3, end: 3, agi: 5, lck: 3 },
+            elementalAttributes: { physical: '-', gun: '-', fire: '-', ice: '-', electric: 'Weak', 
+            wind: '-', psychic: '-', nuclear: '-', bless: '-', curse: `Resist`},
+        },
        
            
        

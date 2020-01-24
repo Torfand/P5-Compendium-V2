@@ -1,38 +1,47 @@
 //view
-html = "";
+html = '';
 
 function Arsene() {
-  let {arcana,strenght,magic,endurance,agility,luck,physical,gun,fire,ice,electric,wind,psychic,nuclear,bless,curse} = unpackedArsene();
+    let { arcana, strenght, magic, endurance, agility, luck, physical, gun, fire, ice, electric, wind, psychic, nuclear, bless, curse } = unpackedArsene();
 
- 
-  html = `
-    <div class="personaProfiles">
-        
-        <h1 class="profileNameandArcana">Arsene --- ${arcana}</h1>
-        <h1 class="profileAttributeHeader">Attributes:</h1>
-        <table class="profileAttributes">
-            <tr>
-                <th>Strength</th>
-                <th>Magic</th>
-                <th>Agility</th>
-                <th>Endurance</th>
-                <th>Luck</td>
-            </tr>
-            <tr>
-                <td>${strenght}</td>
-                <td>${magic}</td>
-                <td>${endurance}</td>
-                <td>${agility}</td>
-                <td>${luck}</td>
-                        </tr> 
-                    </table>`;
-  elementsTable();
-  document.getElementById("wrapper").innerHTML = html;
 
-  function elementsTable() {
+    html = `<h1 class="profileNameandArcana">Arsene --- ${arcana}</h1>
+          <div class="profileAttributes"><h3>Attributes</h3>
+            <table class="profile">
+              <tr>
+                  <th>Strength</th>
+                  <th>Magic</th>
+                  <th>Agility</th>
+                  <th>Endurance</th>
+                  <th>Luck</td>
+              </tr>
+              <tr>
+                  <td>${strenght}</td>
+                  <td>${magic}</td>
+                  <td>${endurance}</td>
+                  <td>${agility}</td>
+                  <td>${luck}</td>
+                          </tr> 
+                          
+              </table></div>
+          `;
+    ArseneElementsTable(physical, gun, fire, ice, electric, wind, psychic, nuclear, bless, curse);
+    ArseneSkillTable();
+    ArsenefuseTo();
+    ArsenefuseFrom();
+    document.getElementById("frontPageTable").innerHTML = html;
+    document.getElementById("frontPageTable").classList.add("profileStyles")
+
+
+
+
+};
+
+
+function ArseneElementsTable(physical, gun, fire, ice, electric, wind, psychic, nuclear, bless, curse) {
     html += `
-        <h1 class="profileElementsHeader">Elements :</h1>
-        <table class="profileElements">
+    <div class="profileElements"><h3>Elements:</h3>
+        <table>
         <tr>
             <th>Physical</th>
             <th>Gun</th>
@@ -57,13 +66,14 @@ function Arsene() {
             <td>${bless}</td>
             <td>${curse}</td>
         </tr> 
-        </table>`;
-    skillTable();
-  }
+        </table></div>
+        `;
+}
 
-  function skillTable() {
-    html += ` <h1 class="profileSkillHeader">Skills :</h1>
-        <table class="profileSkills">
+function ArseneSkillTable() {
+    html += `
+    <div class="profileSkills"><h3>Skills:</h3>
+        <table>
         <tr>
         <th>Level</th>
         <th>Name</th>
@@ -82,17 +92,17 @@ function Arsene() {
             <td>${skillData[skill].description}</td>
             <td>${skillData[skill].cost}</td>
         </tr>`;
+            }
         }
-      }
     }
     html += `</table>`;
-    fuse();
-  }
+};
 
-  function fuse() {
+
+function ArsenefuseTo() {
     html += `
-        <h1 class="profileFuseFromHeader">Fuse From This:</h1>
-        <table class="profileFuseFrom">
+    <div class="profileFuseTo"><h3>Fuse to:</h3>
+        <table>
         <tr>
             <th>Cost</th>
             <th>Ingredients</th>
@@ -104,9 +114,16 @@ function Arsene() {
         </tr>
         `;
     }
-    html += `</table>
-        <h1 class="profileFuseToHeader">Fuse To This :</h1>
-        <table class="profileFuseTo">
+    ;
+
+};
+
+
+
+function ArsenefuseFrom() {
+    html += ` </table></div> 
+    <div class="profileFuseFrom"><h3>Fuse From:</h3>
+        <table class="profileFuseFrom">
         <tr>
             <th>Cost</th>
             <th>Ingredients</th>
@@ -120,9 +137,6 @@ function Arsene() {
         </tr>`;
     }
 
-    html += `
-      </table>
-        </div>`;
-        console.log(html)
-  }
-}
+    html += `</table> </div> `;
+};
+

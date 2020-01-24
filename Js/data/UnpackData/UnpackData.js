@@ -61,7 +61,7 @@ function unpackedPixie() {
     return { arcana, strenght, magic, agility, endurance, luck, physical, gun, fire, ice, electric, wind, psychic, nuclear, bless, curse };
 }
 
-function UnpackedAgathion() {
+function unpackedAgathion() {
     let Agathion = model.personaInfo.personaList[3];
     let arcana = Agathion.Arcana;
     let strenght = Agathion.attributes.str;
@@ -82,7 +82,7 @@ function UnpackedAgathion() {
     return { arcana, strenght, magic, agility, endurance, luck, physical, gun, fire, ice, electric, wind, psychic, nuclear, bless, curse };
 }
 
-function UnpackedMandrake() {
+function unpackedMandrake() {
     let Mandrake = model.personaInfo.personaList[4];
     let arcana = Mandrake.Arcana;
     let strenght = Mandrake.attributes.str;
@@ -102,7 +102,7 @@ function UnpackedMandrake() {
     let curse = Mandrake.elementalAttributes.curse;
     return { arcana, strenght, magic, agility, endurance, luck, physical, gun, fire, ice, electric, wind, psychic, nuclear, bless, curse };
 }
-function UnpackedBicorn() {
+function unpackedBicorn() {
     let Bicorn = model.personaInfo.personaList[5];
     let arcana = Bicorn.Arcana;
     let strenght = Bicorn.attributes.str;
