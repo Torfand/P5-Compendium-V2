@@ -21,7 +21,7 @@ function diplayPersonaContent() {
   }
   html += `</div>`
   document.getElementById("frontPageTable").innerHTML = html;
-  console.log(html);
+
 }
 function displayTable() {
   html = `<div class="table">      
@@ -37,11 +37,11 @@ function displayTable() {
     </div>
     
     `;
-    document.getElementById("frontPageTable").innerHTML = html;
-    
+  document.getElementById("frontPageTable").innerHTML = html;
+
 }
 
-//controller
+
 function collapse() {
   showhide = showhide == false ? true : false;
   html = " ";

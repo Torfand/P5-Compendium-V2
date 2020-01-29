@@ -29,6 +29,7 @@ function Bicorn() {
     BicornSkillTable();
     BicornfuseTo();
     BicornfuseFrom();
+    randomprofilebg();
     document.getElementById("frontPageTable").innerHTML = html;
 
 
@@ -139,3 +140,7 @@ function BicornfuseFrom() {
     html += `</table> </div> `;
 };
 
+function randomprofilebg() {
+    let random = Math.floor(Math.random()* 8) +0;
+     document.getElementById("frontPageTable").classList.add(`profileStyles${random}`);
+  };

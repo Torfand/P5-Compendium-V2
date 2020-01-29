@@ -25,12 +25,14 @@ function Arsene() {
                           
               </table></div>
           `;
+          
     ArseneElementsTable(physical, gun, fire, ice, electric, wind, psychic, nuclear, bless, curse);
     ArseneSkillTable();
     ArsenefuseTo();
     ArsenefuseFrom();
+    randomprofilebg();
     document.getElementById("frontPageTable").innerHTML = html;
-    document.getElementById("frontPageTable").classList.add("profileStyles")
+   
 
 
 
@@ -140,3 +142,7 @@ function ArsenefuseFrom() {
     html += `</table> </div> `;
 };
 
+function randomprofilebg() {
+    let random = Math.floor(Math.random()* 8) +0;
+     document.getElementById("frontPageTable").classList.add(`profileStyles${random}`);
+  };
