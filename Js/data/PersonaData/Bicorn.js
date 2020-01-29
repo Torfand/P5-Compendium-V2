@@ -141,6 +141,6 @@ function BicornfuseFrom() {
 };
 
 function randomprofilebg() {
-    let random = Math.floor(Math.random()* 8) +0;
+    let random = Math.floor(Math.random()* 7) +0;
      document.getElementById("frontPageTable").classList.add(`profileStyles${random}`);
   };

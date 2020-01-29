@@ -113,18 +113,94 @@ table {
     text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 @media only screen and (max-width: 500px) {
-    .profileStyles {
+    .profileStyles1 {
         background-color: bisque;
-        padding: 20px;
+        padding: 50px;
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
-        background-image: url(ProfileBack.png);  
-       background-size: cover;
+        background-image: url(ProfileBack1.png);  
+        background-attachment: fixed;
         border: black 3px solid;
         border-radius: 5%;
         color: whitesmoke;
         text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     }
-    
+    .profileStyles2 {
+        background-color: bisque;
+        padding: 50px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+        background-image: url(ProfileBack2.png);  
+        background-attachment: fixed;
+        border: black 3px solid;
+        border-radius: 5%;
+        color: whitesmoke;
+        text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    }
+    .profileStyles3 {
+        background-color: bisque;
+        padding: 50px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+        background-image: url(ProfileBack3.png);  
+        background-attachment: fixed;
+        border: black 3px solid;
+        border-radius: 5%;
+        color: whitesmoke;
+        text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    }
+    .profileStyles4 {
+        background-color: bisque;
+        padding: 50px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+        background-image: url(ProfileBack4.png);  
+        background-attachment: fixed;
+        border: black 3px solid;
+        border-radius: 5%;
+        color: whitesmoke;
+        text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    }
+    .profileStyles5 {
+        background-color: bisque;
+        padding: 50px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+        background-image: url(ProfileBack5.png);  
+        background-attachment: fixed;
+        border: black 3px solid;
+        border-radius: 5%;
+        color: whitesmoke;
+        text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    }
+    .profileStyles6 {
+        background-color: bisque;
+        padding: 50px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+        background-image: url(ProfileBack6.png);  
+        background-attachment: fixed;
+        border: black 3px solid;
+        border-radius: 5%;
+        color: whitesmoke;
+        text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    }
+    .profileStyles7 {
+        background-color: bisque;
+        padding: 50px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+        background-image: url(ProfileBack7.png);  
+        background-attachment: fixed;
+        border: black 3px solid;
+        border-radius: 5%;
+        color: whitesmoke;
+        text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    }
+    .profileStyles8 {
+        background-color: bisque;
+        padding: 50px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+        background-image: url(ProfileBack8.png);  
+        background-attachment: fixed;
+        border: black 3px solid;
+        border-radius: 5%;
+        color: whitesmoke;
+        text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    }
 
 }
 
