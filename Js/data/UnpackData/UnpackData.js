@@ -120,5 +120,25 @@ function unpackedBicorn() {
     let nuclear = Bicorn.elementalAttributes.nuclear;
     let bless = Bicorn.elementalAttributes.bless;
     let curse = Bicorn.elementalAttributes.curse;
-    return {  arcana, strenght, magic, agility, endurance, luck, physical, gun, fire, ice, electric, wind, psychic, nuclear, bless, curse  };
+    return { arcana, strenght, magic, agility, endurance, luck, physical, gun, fire, ice, electric, wind, psychic, nuclear, bless, curse };
+}
+function UnpackedIncubus() {
+    let Incubus = model.personaInfo.personaList[6];
+    let arcana = Incubus.Arcana;
+    let strenght = Incubus.attributes.str;
+    let magic = Incubus.attributes.mag;
+    let endurance = Incubus.attributes.end;
+    let agility = Incubus.attributes.agi;
+    let luck = Incubus.attributes.lck;
+    let physical = Incubus.elementalAttributes.physical;
+    let gun = Incubus.elementalAttributes.gun;
+    let fire = Incubus.elementalAttributes.fire;
+    let ice = Incubus.elementalAttributes.ice;
+    let electric = Incubus.elementalAttributes.electric;
+    let wind = Incubus.elementalAttributes.wind;
+    let psychic = Incubus.elementalAttributes.psychic;
+    let nuclear = Incubus.elementalAttributes.nuclear;
+    let bless = Incubus.elementalAttributes.bless;
+    let curse = Incubus.elementalAttributes.curse;
+    return { arcana, strenght, magic, endurance, agility, luck, physical, gun, fire, ice, electric, wind, psychic, nuclear, bless, curse };
 }

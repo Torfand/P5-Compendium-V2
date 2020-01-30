@@ -29,7 +29,7 @@ function JackOLantern() {
     JackSkillTable();
     JackfuseTo();
     JackfuseFrom();
-    randomprofilebg();
+    randomprofilebgJack();
     document.getElementById("frontPageTable").innerHTML = html;
 
 
@@ -140,7 +140,7 @@ function JackfuseFrom() {
     html += `</table> </div> `;
 };
 
-function randomprofilebg() {
-    let random = Math.floor(Math.random()* 7) +0;
+function randomprofilebgJack() {
+    let random = Math.floor(Math.random()* 7) +1;
      document.getElementById("frontPageTable").classList.add(`profileStyles${random}`);
   };

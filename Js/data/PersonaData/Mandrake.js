@@ -29,7 +29,7 @@ function Mandrake() {
     MandrakeSkillTable();
     MandrakefuseTo();
     MandrakefuseFrom();
-    randomprofilebg();
+    randomprofilebgMandrake();
     document.getElementById("frontPageTable").innerHTML = html;
 
 
@@ -140,7 +140,7 @@ function MandrakefuseFrom() {
     html += `</table> </div> `;
 };
 
-function randomprofilebg() {
-    let random = Math.floor(Math.random()* 7) +0;
+function randomprofilebgMandrake() {
+    let random = Math.floor(Math.random()* 7) +1;
      document.getElementById("frontPageTable").classList.add(`profileStyles${random}`);
   };

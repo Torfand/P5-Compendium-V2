@@ -30,7 +30,7 @@ function Arsene() {
     ArseneSkillTable();
     ArsenefuseTo();
     ArsenefuseFrom();
-    randomprofilebg();
+    randomprofilebgArsene();
     document.getElementById("frontPageTable").innerHTML = html;
    
 
@@ -142,7 +142,7 @@ function ArsenefuseFrom() {
     html += `</table> </div> `;
 };
 
-function randomprofilebg() {
-    let random = Math.floor(Math.random()* 7) +0;
+function randomprofilebgArsene() {
+    let random = Math.floor(Math.random()* 7) +1;
      document.getElementById("frontPageTable").classList.add(`profileStyles${random}`);
   };

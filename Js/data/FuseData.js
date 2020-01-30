@@ -50,6 +50,12 @@ fuseData = {
             {cost:'¥20,935', combo:  `Stone of Scone (20-Fortune) & Koropokguru (9-Hermit)`},
             {cost:'¥84,295', combo:  `Crystal Skuøø (50-Fool) & Ippon-Dattara (13-Hermit)`},
         ],
+
+        Incubus : [
+            { cost: 'Nothing here yet', combo: 'Nothing here yet' },
+            { cost: 'Nothing here yet', combo: 'Nothing here yet' },
+            { cost: 'Nothing here yet', combo: 'Nothing here yet' }
+        ]
     },
 
 

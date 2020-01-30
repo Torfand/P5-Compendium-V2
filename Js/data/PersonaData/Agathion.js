@@ -29,7 +29,7 @@ function Agathion() {
     AgathionSkillTable();
     AgathionfuseTo();
     AgathionfuseFrom();
-    randomprofilebg();
+    randomprofilebgAgathion();
     document.getElementById("frontPageTable").innerHTML = html;
     
 
@@ -141,7 +141,7 @@ function AgathionfuseFrom() {
     html += `</table> </div> `;
 };
 
-function randomprofilebg() {
-    let random = Math.floor(Math.random()* 7) +0;
+function randomprofilebgAgathion() {
+    let random = Math.floor(Math.random()* 7) +1;
      document.getElementById("frontPageTable").classList.add(`profileStyles${random}`);
   };

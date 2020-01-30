@@ -67,9 +67,56 @@ model = {
                 wind: '-', psychic: '-', nuclear: '-', bless: '-', curse: `Resist`
             },
         },
-
-
-
+        {
+            ProfileID: 'Incubus',
+            Name: 'Incubus',
+            Arcana: 'Devil',
+            attributes: { str: 4, mag: 6, end: 4, agi: 5, lck: 3 },
+            elementalAttributes: {
+                physical: '-', gun: 'Weak', fire: '-', ice: '-', electric: 'Resist',
+                wind: '-', psychic: '-', nuclear: '-', bless: 'Weak', curse: `-`
+            },
+        },
+        {
+            ProfileID: 'Kelpie',
+            Name: 'Kelpie',
+            Arcana: 'Strenght',
+            attributes: { str: 5, mag: 5, end: 5, agi: 6, lck: 4 },
+            elementalAttributes: {
+                physical: '-', gun: '-', fire: '-', ice: 'Resist', electric: 'Weak',
+                wind: '-', psychic: '-', nuclear: '-', bless: '-', curse: `-`
+            },
+        },
+        {
+            ProfileID: 'SakiMitama',
+            Name: 'Saki Mitama',
+            Arcana: 'Lovers',
+            attributes: { str: 4, mag: 6, end: 5, agi: 6, lck: 4 },
+            elementalAttributes: {
+                physical: '-', gun: '-', fire: '-', ice: 'Resist', electric: 'Weak',
+                wind: '-', psychic: '-', nuclear: '-', bless: '-', curse: `-`
+            },
+        },
+        {
+            ProfileID: 'Silky',
+            Name: 'Silky',
+            Arcana: 'Priestess',
+            attributes: { str: 4, mag: 7, end: 4, agi: 5, lck: 5 },
+            elementalAttributes: {
+                physical: '-', gun: '-', fire: 'Weak', ice: 'Resist', electric: 'Weak',
+                wind: '-', psychic: '-', nuclear: '-', bless: '-', curse: `-`
+            },
+        },
+        {
+            ProfileID: 'Genbu',
+            Name: 'Genbu',
+            Arcana: 'Temperance',
+            attributes: { str: 5, mag: 6, end: 7, agi: 6, lck: 4 },
+            elementalAttributes: {
+                physical: '-', gun: '-', fire: '-', ice: 'Nullified', electric: 'Weak',
+                wind: '-', psychic: 'Resist', nuclear: '-', bless: '-', curse: `-`
+            },
+        },
 
         ]
 

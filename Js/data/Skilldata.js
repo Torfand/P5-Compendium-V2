@@ -30,18 +30,18 @@ skillData = {
     }
   },
 
-  Apt_Pupil : {
-    name : 'Apt Pupil',
+  Apt_Pupil: {
+    name: 'Apt Pupil',
     type: 'Passive',
-    description : 'Increases Critical rate.',
-    cost:'-',
-    persona:{
-      Andras : 13,
+    description: 'Increases Critical rate.',
+    cost: '-',
+    persona: {
+      Andras: 13,
       Aridane: 0,
       Aridane_Picaro: 0,
-      Bicorn : 8,
+      Bicorn: 8,
       Futsunushi: 80,
-      Sudama : 22,
+      Sudama: 22,
     }
 
   },
@@ -134,6 +134,19 @@ skillData = {
 
     }
   },
+  Dodge_Curse: {
+    name: 'Dodge Curse',
+    type: 'Passive',
+    description: 'Double evasion rate against (Non instant death) Curse attacks',
+    cost: '-',
+    persona: {
+      Angel: 15,
+      Incubus: 9,
+      Koh_i_Noor: 0,
+      Shiisaa: 20,
+
+    }
+  },
 
   Dream_Needle: {
     name: "Dream Needle",
@@ -158,6 +171,21 @@ skillData = {
       Arsene: 1,
       Incubus: 7,
       Slime: 11
+    }
+  },
+  Evil_Touch: {
+    name: 'Evil Touch',
+    type: 'Ailment',
+    description: 'Inflict Fear (High-Odds) to 1 Foe.',
+    cost: '5 SP',
+    persona: {
+      Black_Ooze: 0,
+      Incubus: 0,
+      Kodama: 13,
+      Nekomata: 0,
+      Skadi: 0,
+      Slime: 0,
+      White_Rider: 0,
     }
   },
   Energy_drop: {
@@ -216,7 +244,18 @@ skillData = {
 
     }
   },
-
+  Life_Drain: {
+    name: 'Life Drain',
+    type: 'Almighty',
+    description: 'Drains 1 HP from 1 Foe.',
+    cost: '3 SP',
+    persona: {
+      Chorozon: 0,
+      Incubus: 0,
+      Legion: 0,
+      Tsukiyomi: 0,
+    }
+  },
   Ice_Break: {
     name: 'Ice Break',
     type: 'Ice',

@@ -1,11 +1,11 @@
 //view
 html = '';
 
-function Pixie() {
-    let { arcana, strenght, magic, endurance, agility, luck, physical, gun, fire, ice, electric, wind, psychic, nuclear, bless, curse } = unpackedPixie();
+function Incubus() {
+    let { arcana, strenght, magic, endurance, agility, luck, physical, gun, fire, ice, electric, wind, psychic, nuclear, bless, curse } = UnpackedIncubus();
 
 
-    html = `<h1 class="profileNameandArcana">Pixie --- ${arcana}</h1>
+    html = `<h1 class="profileNameandArcana">Incubus --- ${arcana}</h1>
           <div class="profileAttributes"><h3>Attributes</h3>
             <table class="profile">
               <tr>
@@ -25,12 +25,14 @@ function Pixie() {
                           
               </table></div>
           `;
-    PixieElementsTable(physical, gun, fire, ice, electric, wind, psychic, nuclear, bless, curse);
-    PixieSkillTable();
-    PixiefuseTo();
-    PixiefuseFrom();
-    randomprofilebgPixie();
+          
+    IncubusElementsTable(physical, gun, fire, ice, electric, wind, psychic, nuclear, bless, curse);
+    IncubusSkillTable();
+     IncubusfuseTo();
+    // IncubusfuseFrom();
+    randomprofilebgIncubus();
     document.getElementById("frontPageTable").innerHTML = html;
+   
 
 
 
@@ -38,7 +40,9 @@ function Pixie() {
 };
 
 
-function PixieElementsTable(physical, gun, fire, ice, electric, wind, psychic, nuclear, bless, curse) {
+
+
+function IncubusElementsTable(physical, gun, fire, ice, electric, wind, psychic, nuclear, bless, curse) {
     html += `
     <div class="profileElements"><h3>Elements:</h3>
         <table>
@@ -70,7 +74,7 @@ function PixieElementsTable(physical, gun, fire, ice, electric, wind, psychic, n
         `;
 }
 
-function PixieSkillTable() {
+function IncubusSkillTable() {
     html += `
     <div class="profileSkills"><h3>Skills:</h3>
         <table>
@@ -83,10 +87,10 @@ function PixieSkillTable() {
         </tr> `;
     for (var skill in skillData) {
       for (var thing in skillData[skill].persona) {
-        if (skillData[skill].persona.hasOwnProperty("Pixie") && thing == "Pixie") {
+        if (skillData[skill].persona.hasOwnProperty("Incubus") && thing == "Incubus") {
           html += `
         <tr>
-            <td>${skillData[skill].persona.Pixie}</td>
+            <td>${skillData[skill].persona.Incubus}</td>
             <td>${skillData[skill].name}</td>
             <td>${skillData[skill].type}</td>
             <td>${skillData[skill].description}</td>
@@ -99,7 +103,7 @@ function PixieSkillTable() {
 };
 
 
-function PixiefuseTo() {
+function IncubusfuseTo() {
     html += `
     <div class="profileFuseTo"><h3>Fuse to:</h3>
         <table>
@@ -107,7 +111,7 @@ function PixiefuseTo() {
             <th>Cost</th>
             <th>Ingredients</th>
         </tr>`;
-    for (fusecombo of fuseData.fuseTo.Pixie) {
+    for (fusecombo of fuseData.fuseTo.Incubus) {
       html += `<tr>
             <td>${fusecombo.cost}</td>
             <td>${fusecombo.combo}</td>
@@ -120,27 +124,27 @@ function PixiefuseTo() {
 
 
 
-function PixiefuseFrom() {
-    html += ` </table></div> 
-    <div class="profileFuseFrom"><h3>Fuse From:</h3>
-        <table class="profileFuseFrom">
-        <tr>
-            <th>Cost</th>
-            <th>Ingredients</th>
-        </tr>
-        `;
-    for (fusecombo of fuseData.fuseFrom.Pixie) {
-      html += `
-        <tr>
-            <td>${fusecombo.cost}</td>
-            <td>${fusecombo.combo}</td>
-        </tr>`;
-    }
+// function IncubusfuseFrom() {
+//     html += ` </table></div> 
+//     <div class="profileFuseFrom"><h3>Fuse From:</h3>
+//         <table class="profileFuseFrom">
+//         <tr>
+//             <th>Cost</th>
+//             <th>Ingredients</th>
+//         </tr>
+//         `;
+//     for (fusecombo of fuseData.fuseFrom.Incubus) {
+//       html += `
+//         <tr>
+//             <td>${fusecombo.cost}</td>
+//             <td>${fusecombo.combo}</td>
+//         </tr>`;
+//     }
 
-    html += `</table> </div> `;
-};
+//     html += `</table> </div> `;
+// };
 
-function randomprofilebgPixie() {
+function randomprofilebgIncubus() {
     let random = Math.floor(Math.random()* 7) +1;
      document.getElementById("frontPageTable").classList.add(`profileStyles${random}`);
   };
